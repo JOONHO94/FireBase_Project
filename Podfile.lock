@@ -1,0 +1,40 @@
+PODS:
+  - Alamofire (5.5.0)
+  - BulletinBoard (5.0.0)
+  - DropDown (2.3.13)
+  - FSCalendar (2.8.2)
+  - JWTDecode (2.6.3)
+  - LNZTreeView (1.1.2)
+  - SwiftKeychainWrapper (4.0.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.5)
+  - BulletinBoard
+  - DropDown
+  - FSCalendar
+  - JWTDecode
+  - LNZTreeView
+  - SwiftKeychainWrapper
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - BulletinBoard
+    - DropDown
+    - FSCalendar
+    - JWTDecode
+    - LNZTreeView
+    - SwiftKeychainWrapper
+
+SPEC CHECKSUMS:
+  Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
+  BulletinBoard: dba77053c2a7b64953f63073f7534165af2edd21
+  DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
+  FSCalendar: e6a2eb9c571bf0719ed797ef807e08426753c241
+  JWTDecode: 33e5e26e5ddbd21b2065820894c08fef0cad9509
+  LNZTreeView: f04b4a96e5780f5071f8c08b0f6f6554775e46f4
+  SwiftKeychainWrapper: 807ba1d63c33a7d0613288512399cd1eda1e470c
+
+PODFILE CHECKSUM: f1c375cdeb0f5332f1c4d8caf979d8df7cd3494a
+
+COCOAPODS: 1.11.2

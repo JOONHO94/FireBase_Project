@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB2E1ECB2436B9BBCB0C5F51 /* Pods_K_Connect_IOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C415E9A7DB1711A5E9FF4804 /* Pods_K_Connect_IOS.framework */; };
+		CF24914427D9B9550038D704 /* LoadingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF24914327D9B9550038D704 /* LoadingService.swift */; };
+		CF24919527D9DD2A0038D704 /* AdminEmployeeDetailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF24918C27D9DD2A0038D704 /* AdminEmployeeDetailPage.swift */; };
+		CF24919627D9DD2A0038D704 /* AdminEmployeeManagePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF24918D27D9DD2A0038D704 /* AdminEmployeeManagePage.swift */; };
+		CF24919727D9DD2A0038D704 /* AdminDetailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF24918E27D9DD2A0038D704 /* AdminDetailPage.swift */; };
+		CF24919827D9DD2A0038D704 /* AdminMainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF24918F27D9DD2A0038D704 /* AdminMainPage.swift */; };
+		CF24919927D9DD2A0038D704 /* AdminGroupManagePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF24919027D9DD2A0038D704 /* AdminGroupManagePage.swift */; };
+		CF24919A27D9DD2A0038D704 /* AdminNewEmployeePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF24919127D9DD2A0038D704 /* AdminNewEmployeePage.swift */; };
+		CF24919B27D9DD2A0038D704 /* AdminStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF24919227D9DD2A0038D704 /* AdminStoryboard.storyboard */; };
+		CF24919C27D9DD2A0038D704 /* AdminVacationHistoryPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF24919327D9DD2A0038D704 /* AdminVacationHistoryPage.swift */; };
+		CF24919D27D9DD2A0038D704 /* AdminChangeEmployeePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF24919427D9DD2A0038D704 /* AdminChangeEmployeePage.swift */; };
+		CF24919F27D9DD5E0038D704 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF24919E27D9DD5D0038D704 /* DetailController.swift */; };
+		CF7D5FAC27BCD98600D3B1C1 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7D5FAB27BCD98600D3B1C1 /* LoginModel.swift */; };
+		CF7D5FAE27BCD9D500D3B1C1 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7D5FAD27BCD9D500D3B1C1 /* UserModel.swift */; };
+		CF7D5FC027BE044000D3B1C1 /* EmployeeStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF7D5FBF27BE044000D3B1C1 /* EmployeeStoryboard.storyboard */; };
+		CF7D5FC227BE045900D3B1C1 /* EmployeeMainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7D5FC127BE045900D3B1C1 /* EmployeeMainPage.swift */; };
+		CF7D5FCB27BF38FC00D3B1C1 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7D5FCA27BF38FC00D3B1C1 /* ProfileModel.swift */; };
+		CF7D5FCF27BF679100D3B1C1 /* VacationHistoryListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7D5FCE27BF679100D3B1C1 /* VacationHistoryListModel.swift */; };
+		CF7D5FD327BF970000D3B1C1 /* EmployeeVacationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7D5FD227BF970000D3B1C1 /* EmployeeVacationInfo.swift */; };
+		CF91364C27C471F8006EE678 /* EmployeeVacationApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF91364B27C471F8006EE678 /* EmployeeVacationApplication.swift */; };
+		CF91364E27C4A5B3006EE678 /* ApprovalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF91364D27C4A5B3006EE678 /* ApprovalModel.swift */; };
+		CF91365027C4B433006EE678 /* EmployeeApprovalInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF91364F27C4B433006EE678 /* EmployeeApprovalInfo.swift */; };
+		CF91365227C8A45E006EE678 /* SuccessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF91365127C8A45E006EE678 /* SuccessModel.swift */; };
+		CF91365627C8A903006EE678 /* EmployeeVacationHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF91365527C8A903006EE678 /* EmployeeVacationHistory.swift */; };
+		CF91365827CC9DE7006EE678 /* TotalDaysModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF91365727CC9DE6006EE678 /* TotalDaysModel.swift */; };
+		CF91365A27CCAD04006EE678 /* EmployeeTeamVacationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF91365927CCAD04006EE678 /* EmployeeTeamVacationInfo.swift */; };
+		CF9972CF27CF353E0004F351 /* VacationListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9972CE27CF353E0004F351 /* VacationListModel.swift */; };
+		CF9972D127CF43D80004F351 /* VacationDateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9972D027CF43D80004F351 /* VacationDateModel.swift */; };
+		CF9972D327D59AE70004F351 /* EmployeeVacationInfoLeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9972D227D59AE60004F351 /* EmployeeVacationInfoLeader.swift */; };
+		CFA01CEF27BA583800258455 /* ChangePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA01CEE27BA583800258455 /* ChangePasswordView.swift */; };
+		CFAB215D27BA531A002B2E3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB215C27BA531A002B2E3C /* AppDelegate.swift */; };
+		CFAB215F27BA531A002B2E3C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB215E27BA531A002B2E3C /* SceneDelegate.swift */; };
+		CFAB216127BA531A002B2E3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB216027BA531A002B2E3C /* ViewController.swift */; };
+		CFAB216427BA531A002B2E3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFAB216227BA531A002B2E3C /* Main.storyboard */; };
+		CFAB216627BA531B002B2E3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFAB216527BA531B002B2E3C /* Assets.xcassets */; };
+		CFAB216927BA531B002B2E3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFAB216727BA531B002B2E3C /* LaunchScreen.storyboard */; };
+		CFAB217127BA5434002B2E3C /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = CFAB217027BA5434002B2E3C /* logo.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		327E64258088FF5B8DC2B6DA /* Pods-K-Connect-IOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-K-Connect-IOS.release.xcconfig"; path = "Target Support Files/Pods-K-Connect-IOS/Pods-K-Connect-IOS.release.xcconfig"; sourceTree = "<group>"; };
+		C415E9A7DB1711A5E9FF4804 /* Pods_K_Connect_IOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_K_Connect_IOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF24914327D9B9550038D704 /* LoadingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingService.swift; sourceTree = "<group>"; };
+		CF24918C27D9DD2A0038D704 /* AdminEmployeeDetailPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminEmployeeDetailPage.swift; sourceTree = "<group>"; };
+		CF24918D27D9DD2A0038D704 /* AdminEmployeeManagePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminEmployeeManagePage.swift; sourceTree = "<group>"; };
+		CF24918E27D9DD2A0038D704 /* AdminDetailPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminDetailPage.swift; sourceTree = "<group>"; };
+		CF24918F27D9DD2A0038D704 /* AdminMainPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminMainPage.swift; sourceTree = "<group>"; };
+		CF24919027D9DD2A0038D704 /* AdminGroupManagePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminGroupManagePage.swift; sourceTree = "<group>"; };
+		CF24919127D9DD2A0038D704 /* AdminNewEmployeePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminNewEmployeePage.swift; sourceTree = "<group>"; };
+		CF24919227D9DD2A0038D704 /* AdminStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AdminStoryboard.storyboard; sourceTree = "<group>"; };
+		CF24919327D9DD2A0038D704 /* AdminVacationHistoryPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminVacationHistoryPage.swift; sourceTree = "<group>"; };
+		CF24919427D9DD2A0038D704 /* AdminChangeEmployeePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminChangeEmployeePage.swift; sourceTree = "<group>"; };
+		CF24919E27D9DD5D0038D704 /* DetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
+		CF7D5FAB27BCD98600D3B1C1 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		CF7D5FAD27BCD9D500D3B1C1 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		CF7D5FBF27BE044000D3B1C1 /* EmployeeStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EmployeeStoryboard.storyboard; sourceTree = "<group>"; };
+		CF7D5FC127BE045900D3B1C1 /* EmployeeMainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeMainPage.swift; sourceTree = "<group>"; };
+		CF7D5FCA27BF38FC00D3B1C1 /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
+		CF7D5FCE27BF679100D3B1C1 /* VacationHistoryListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacationHistoryListModel.swift; sourceTree = "<group>"; };
+		CF7D5FD227BF970000D3B1C1 /* EmployeeVacationInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeVacationInfo.swift; sourceTree = "<group>"; };
+		CF91364B27C471F8006EE678 /* EmployeeVacationApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeVacationApplication.swift; sourceTree = "<group>"; };
+		CF91364D27C4A5B3006EE678 /* ApprovalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApprovalModel.swift; sourceTree = "<group>"; };
+		CF91364F27C4B433006EE678 /* EmployeeApprovalInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeApprovalInfo.swift; sourceTree = "<group>"; };
+		CF91365127C8A45E006EE678 /* SuccessModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessModel.swift; sourceTree = "<group>"; };
+		CF91365527C8A903006EE678 /* EmployeeVacationHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeVacationHistory.swift; sourceTree = "<group>"; };
+		CF91365727CC9DE6006EE678 /* TotalDaysModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalDaysModel.swift; sourceTree = "<group>"; };
+		CF91365927CCAD04006EE678 /* EmployeeTeamVacationInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeTeamVacationInfo.swift; sourceTree = "<group>"; };
+		CF9972CE27CF353E0004F351 /* VacationListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacationListModel.swift; sourceTree = "<group>"; };
+		CF9972D027CF43D80004F351 /* VacationDateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacationDateModel.swift; sourceTree = "<group>"; };
+		CF9972D227D59AE60004F351 /* EmployeeVacationInfoLeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeVacationInfoLeader.swift; sourceTree = "<group>"; };
+		CFA01CEE27BA583800258455 /* ChangePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordView.swift; sourceTree = "<group>"; };
+		CFAB215927BA531A002B2E3C /* K-Connect-IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "K-Connect-IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFAB215C27BA531A002B2E3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CFAB215E27BA531A002B2E3C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CFAB216027BA531A002B2E3C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CFAB216327BA531A002B2E3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CFAB216527BA531B002B2E3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CFAB216827BA531B002B2E3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CFAB216A27BA531B002B2E3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFAB217027BA5434002B2E3C /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		F6A3428C780EB43B551C6683 /* Pods-K-Connect-IOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-K-Connect-IOS.debug.xcconfig"; path = "Target Support Files/Pods-K-Connect-IOS/Pods-K-Connect-IOS.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CFAB215627BA531A002B2E3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB2E1ECB2436B9BBCB0C5F51 /* Pods_K_Connect_IOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF7D5FC727BE434000D3B1C1 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		CFA01CE627BA579E00258455 /* Employee */ = {
+			isa = PBXGroup;
+			children = (
+				CF7D5FBF27BE044000D3B1C1 /* EmployeeStoryboard.storyboard */,
+				CF7D5FC127BE045900D3B1C1 /* EmployeeMainPage.swift */,
+				CF7D5FD227BF970000D3B1C1 /* EmployeeVacationInfo.swift */,
+				CF91364B27C471F8006EE678 /* EmployeeVacationApplication.swift */,
+				CF91364F27C4B433006EE678 /* EmployeeApprovalInfo.swift */,
+				CF91365527C8A903006EE678 /* EmployeeVacationHistory.swift */,
+				CF91365927CCAD04006EE678 /* EmployeeTeamVacationInfo.swift */,
+				CF9972D227D59AE60004F351 /* EmployeeVacationInfoLeader.swift */,
+				CF24914327D9B9550038D704 /* LoadingService.swift */,
+			);
+			name = Employee;
+			sourceTree = "<group>";
+		};
+		CFA01CE727BA57A500258455 /* Admin */ = {
+			isa = PBXGroup;
+			children = (
+				CF24919427D9DD2A0038D704 /* AdminChangeEmployeePage.swift */,
+				CF24918E27D9DD2A0038D704 /* AdminDetailPage.swift */,
+				CF24918C27D9DD2A0038D704 /* AdminEmployeeDetailPage.swift */,
+				CF24918D27D9DD2A0038D704 /* AdminEmployeeManagePage.swift */,
+				CF24919027D9DD2A0038D704 /* AdminGroupManagePage.swift */,
+				CF24918F27D9DD2A0038D704 /* AdminMainPage.swift */,
+				CF24919127D9DD2A0038D704 /* AdminNewEmployeePage.swift */,
+				CF24919227D9DD2A0038D704 /* AdminStoryboard.storyboard */,
+				CF24919327D9DD2A0038D704 /* AdminVacationHistoryPage.swift */,
+			);
+			path = Admin;
+			sourceTree = "<group>";
+		};
+		CFA01CE827BA57AC00258455 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CF24919E27D9DD5D0038D704 /* DetailController.swift */,
+				CF7D5FAB27BCD98600D3B1C1 /* LoginModel.swift */,
+				CF7D5FAD27BCD9D500D3B1C1 /* UserModel.swift */,
+				CF7D5FCA27BF38FC00D3B1C1 /* ProfileModel.swift */,
+				CF7D5FCE27BF679100D3B1C1 /* VacationHistoryListModel.swift */,
+				CF91364D27C4A5B3006EE678 /* ApprovalModel.swift */,
+				CF91365127C8A45E006EE678 /* SuccessModel.swift */,
+				CF91365727CC9DE6006EE678 /* TotalDaysModel.swift */,
+				CF9972CE27CF353E0004F351 /* VacationListModel.swift */,
+				CF9972D027CF43D80004F351 /* VacationDateModel.swift */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		CFAB215027BA531A002B2E3C = {
+			isa = PBXGroup;
+			children = (
+				CFAB215B27BA531A002B2E3C /* K-Connect-IOS */,
+				CFAB215A27BA531A002B2E3C /* Products */,
+				F7FE4EF34819F9F529A49851 /* Pods */,
+				DA5945BD52001DDDF23FB1B1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CFAB215A27BA531A002B2E3C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CFAB215927BA531A002B2E3C /* K-Connect-IOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CFAB215B27BA531A002B2E3C /* K-Connect-IOS */ = {
+			isa = PBXGroup;
+			children = (
+				CF7D5FC727BE434000D3B1C1 /* Network */,
+				CFA01CE827BA57AC00258455 /* Common */,
+				CFA01CE727BA57A500258455 /* Admin */,
+				CFA01CE627BA579E00258455 /* Employee */,
+				CFAB215C27BA531A002B2E3C /* AppDelegate.swift */,
+				CFAB215E27BA531A002B2E3C /* SceneDelegate.swift */,
+				CFAB216027BA531A002B2E3C /* ViewController.swift */,
+				CFAB216227BA531A002B2E3C /* Main.storyboard */,
+				CFA01CEE27BA583800258455 /* ChangePasswordView.swift */,
+				CFAB216527BA531B002B2E3C /* Assets.xcassets */,
+				CFAB217027BA5434002B2E3C /* logo.png */,
+				CFAB216727BA531B002B2E3C /* LaunchScreen.storyboard */,
+				CFAB216A27BA531B002B2E3C /* Info.plist */,
+			);
+			path = "K-Connect-IOS";
+			sourceTree = "<group>";
+		};
+		DA5945BD52001DDDF23FB1B1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C415E9A7DB1711A5E9FF4804 /* Pods_K_Connect_IOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F7FE4EF34819F9F529A49851 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F6A3428C780EB43B551C6683 /* Pods-K-Connect-IOS.debug.xcconfig */,
+				327E64258088FF5B8DC2B6DA /* Pods-K-Connect-IOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CFAB215827BA531A002B2E3C /* K-Connect-IOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFAB216D27BA531B002B2E3C /* Build configuration list for PBXNativeTarget "K-Connect-IOS" */;
+			buildPhases = (
+				7D827A410F5ABA020CB9F0FA /* [CP] Check Pods Manifest.lock */,
+				CFAB215527BA531A002B2E3C /* Sources */,
+				CFAB215627BA531A002B2E3C /* Frameworks */,
+				CFAB215727BA531A002B2E3C /* Resources */,
+				5B681A49D6118CBBDE5C4866 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "K-Connect-IOS";
+			productName = "K-Connect-IOS";
+			productReference = CFAB215927BA531A002B2E3C /* K-Connect-IOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CFAB215127BA531A002B2E3C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					CFAB215827BA531A002B2E3C = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = CFAB215427BA531A002B2E3C /* Build configuration list for PBXProject "K-Connect-IOS" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CFAB215027BA531A002B2E3C;
+			productRefGroup = CFAB215A27BA531A002B2E3C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CFAB215827BA531A002B2E3C /* K-Connect-IOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CFAB215727BA531A002B2E3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFAB217127BA5434002B2E3C /* logo.png in Resources */,
+				CFAB216927BA531B002B2E3C /* LaunchScreen.storyboard in Resources */,
+				CFAB216627BA531B002B2E3C /* Assets.xcassets in Resources */,
+				CF24919B27D9DD2A0038D704 /* AdminStoryboard.storyboard in Resources */,
+				CFAB216427BA531A002B2E3C /* Main.storyboard in Resources */,
+				CF7D5FC027BE044000D3B1C1 /* EmployeeStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5B681A49D6118CBBDE5C4866 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-K-Connect-IOS/Pods-K-Connect-IOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-K-Connect-IOS/Pods-K-Connect-IOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-K-Connect-IOS/Pods-K-Connect-IOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D827A410F5ABA020CB9F0FA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-K-Connect-IOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CFAB215527BA531A002B2E3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF7D5FCB27BF38FC00D3B1C1 /* ProfileModel.swift in Sources */,
+				CF24919727D9DD2A0038D704 /* AdminDetailPage.swift in Sources */,
+				CF24919827D9DD2A0038D704 /* AdminMainPage.swift in Sources */,
+				CF7D5FCF27BF679100D3B1C1 /* VacationHistoryListModel.swift in Sources */,
+				CF91365027C4B433006EE678 /* EmployeeApprovalInfo.swift in Sources */,
+				CF7D5FAC27BCD98600D3B1C1 /* LoginModel.swift in Sources */,
+				CF24914427D9B9550038D704 /* LoadingService.swift in Sources */,
+				CF91365227C8A45E006EE678 /* SuccessModel.swift in Sources */,
+				CF9972D127CF43D80004F351 /* VacationDateModel.swift in Sources */,
+				CFAB216127BA531A002B2E3C /* ViewController.swift in Sources */,
+				CF24919A27D9DD2A0038D704 /* AdminNewEmployeePage.swift in Sources */,
+				CF7D5FC227BE045900D3B1C1 /* EmployeeMainPage.swift in Sources */,
+				CFAB215D27BA531A002B2E3C /* AppDelegate.swift in Sources */,
+				CF91364C27C471F8006EE678 /* EmployeeVacationApplication.swift in Sources */,
+				CF7D5FD327BF970000D3B1C1 /* EmployeeVacationInfo.swift in Sources */,
+				CF9972CF27CF353E0004F351 /* VacationListModel.swift in Sources */,
+				CF91364E27C4A5B3006EE678 /* ApprovalModel.swift in Sources */,
+				CF9972D327D59AE70004F351 /* EmployeeVacationInfoLeader.swift in Sources */,
+				CF24919927D9DD2A0038D704 /* AdminGroupManagePage.swift in Sources */,
+				CF24919527D9DD2A0038D704 /* AdminEmployeeDetailPage.swift in Sources */,
+				CFAB215F27BA531A002B2E3C /* SceneDelegate.swift in Sources */,
+				CF7D5FAE27BCD9D500D3B1C1 /* UserModel.swift in Sources */,
+				CF24919C27D9DD2A0038D704 /* AdminVacationHistoryPage.swift in Sources */,
+				CF91365827CC9DE7006EE678 /* TotalDaysModel.swift in Sources */,
+				CF24919D27D9DD2A0038D704 /* AdminChangeEmployeePage.swift in Sources */,
+				CFA01CEF27BA583800258455 /* ChangePasswordView.swift in Sources */,
+				CF91365627C8A903006EE678 /* EmployeeVacationHistory.swift in Sources */,
+				CF91365A27CCAD04006EE678 /* EmployeeTeamVacationInfo.swift in Sources */,
+				CF24919F27D9DD5E0038D704 /* DetailController.swift in Sources */,
+				CF24919627D9DD2A0038D704 /* AdminEmployeeManagePage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CFAB216227BA531A002B2E3C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFAB216327BA531A002B2E3C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CFAB216727BA531B002B2E3C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFAB216827BA531B002B2E3C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CFAB216B27BA531B002B2E3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CFAB216C27BA531B002B2E3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CFAB216E27BA531B002B2E3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6A3428C780EB43B551C6683 /* Pods-K-Connect-IOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2HUVC9AWHR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "K-Connect-IOS/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.leejunhyeob.K-Connect-IOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CFAB216F27BA531B002B2E3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 327E64258088FF5B8DC2B6DA /* Pods-K-Connect-IOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2HUVC9AWHR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "K-Connect-IOS/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.leejunhyeob.K-Connect-IOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CFAB215427BA531A002B2E3C /* Build configuration list for PBXProject "K-Connect-IOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFAB216B27BA531B002B2E3C /* Debug */,
+				CFAB216C27BA531B002B2E3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFAB216D27BA531B002B2E3C /* Build configuration list for PBXNativeTarget "K-Connect-IOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFAB216E27BA531B002B2E3C /* Debug */,
+				CFAB216F27BA531B002B2E3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CFAB215127BA531A002B2E3C /* Project object */;
+}
