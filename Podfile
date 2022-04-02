@@ -15,5 +15,7 @@ pod 'JWTDecode'
 pod 'BulletinBoard'
 pod 'DropDown'
 
-
+pod 'Firebase/Analytics'
+pod 'Firebase/Database'
+pod 'Firebase/Auth'
 end

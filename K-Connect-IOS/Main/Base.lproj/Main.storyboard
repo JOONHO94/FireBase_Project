@@ -219,17 +219,23 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CPO-7o-XMI">
-                                <rect key="frame" x="325" y="659" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="취소"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sdo-7L-EG5">
-                                <rect key="frame" x="63" y="679" width="73" height="31"/>
+                                <rect key="frame" x="171" y="621" width="73" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="회원가입"/>
+                                <connections>
+                                    <action selector="Btn_DoJoin:" destination="oLQ-6R-VWa" eventType="touchUpInside" id="XeX-tM-AVT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CPO-7o-XMI">
+                                <rect key="frame" x="183" y="671" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="취소"/>
+                                <connections>
+                                    <action selector="Btn_BackNavigation:" destination="oLQ-6R-VWa" eventType="touchUpInside" id="Th9-pD-Qtd"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="HPf-3H-skB"/>
@@ -246,6 +252,11 @@
                             <constraint firstItem="cZa-qZ-FVR" firstAttribute="centerX" secondItem="LDz-8p-vQx" secondAttribute="centerX" id="r85-C8-Oyc"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="TextField_Email" destination="T9D-J2-DlH" id="mQc-Rs-hqY"/>
+                        <outlet property="TextField_Pw" destination="uRK-Ln-yn6" id="zwY-3T-qQ4"/>
+                        <outlet property="TextField_PwCheck" destination="cZa-qZ-FVR" id="lAL-3j-1K3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u5p-EV-HBf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -2,13 +2,18 @@
 //  ViewController.swift
 //  Study7
 //
-//  Created by 이준협 on 2022/01/26.
+//  Created by 최준호 on 2022/01/26.
 //
 
 import UIKit
 import Alamofire
 import SwiftKeychainWrapper
 import JWTDecode
+import Firebase
+import FirebaseAuth
+
+//pod 'Firebase/Auth' 유저 관련 pod
+//pod 'Firebase/Database' Realtime Database 관련 pod
 
 class ViewController: UIViewController {
     
@@ -25,14 +30,34 @@ class ViewController: UIViewController {
         imgView.image = imgLogo
         print("ViewController")
     }
+    
+    
     @IBAction func LoginBtn(_ sender: Any) {
-        UserDefaults.resetStandardUserDefaults()
-        LoadingService.showLoading()
-      login()
+        guard let email = userIdInput.text, let password = userPwdInput.text
+        else{return}
+        
+        Auth.auth().signIn(withEmail: email, password: password) {
+            (authResult, error) in
+            guard let user = authResult?.user else { return }
+            
+            if error == nil {
+                print("login success")
+                print(user)
+            } else {
+                print("login fail")
+            }
+        }
+        
+        
+        
+//        UserDefaults.resetStandardUserDefaults()
+//        LoadingService.showLoading()
+//      login()
         
     }
     
     @IBAction func Btn_GoJoin(_ sender: Any) {
+        
         
         if let Controller = self.storyboard?.instantiateViewController(withIdentifier: "JoinController") {
             self.navigationController?

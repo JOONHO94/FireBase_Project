@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7F01C23327F842C0003A6D8B /* JoinController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F01C23227F842C0003A6D8B /* JoinController.swift */; };
+		7F572BF527F85C0700C1809D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7F572BF427F85C0700C1809D /* GoogleService-Info.plist */; };
 		CB2E1ECB2436B9BBCB0C5F51 /* Pods_K_Connect_IOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C415E9A7DB1711A5E9FF4804 /* Pods_K_Connect_IOS.framework */; };
 		CF24914427D9B9550038D704 /* LoadingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF24914327D9B9550038D704 /* LoadingService.swift */; };
 		CF24919527D9DD2A0038D704 /* AdminEmployeeDetailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF24918C27D9DD2A0038D704 /* AdminEmployeeDetailPage.swift */; };
@@ -50,6 +51,7 @@
 /* Begin PBXFileReference section */
 		327E64258088FF5B8DC2B6DA /* Pods-K-Connect-IOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-K-Connect-IOS.release.xcconfig"; path = "Target Support Files/Pods-K-Connect-IOS/Pods-K-Connect-IOS.release.xcconfig"; sourceTree = "<group>"; };
 		7F01C23227F842C0003A6D8B /* JoinController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinController.swift; sourceTree = "<group>"; };
+		7F572BF427F85C0700C1809D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C415E9A7DB1711A5E9FF4804 /* Pods_K_Connect_IOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_K_Connect_IOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF24914327D9B9550038D704 /* LoadingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingService.swift; sourceTree = "<group>"; };
 		CF24918C27D9DD2A0038D704 /* AdminEmployeeDetailPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminEmployeeDetailPage.swift; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 				CFAB217027BA5434002B2E3C /* logo.png */,
 				CFAB216727BA531B002B2E3C /* LaunchScreen.storyboard */,
 				CFAB216A27BA531B002B2E3C /* Info.plist */,
+				7F572BF427F85C0700C1809D /* GoogleService-Info.plist */,
 			);
 			path = "K-Connect-IOS";
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 				CF24919B27D9DD2A0038D704 /* AdminStoryboard.storyboard in Resources */,
 				CFAB216427BA531A002B2E3C /* Main.storyboard in Resources */,
 				CF7D5FC027BE044000D3B1C1 /* EmployeeStoryboard.storyboard in Resources */,
+				7F572BF527F85C0700C1809D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
