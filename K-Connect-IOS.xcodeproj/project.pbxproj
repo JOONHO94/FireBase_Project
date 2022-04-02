@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F01C23327F842C0003A6D8B /* JoinController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F01C23227F842C0003A6D8B /* JoinController.swift */; };
 		CB2E1ECB2436B9BBCB0C5F51 /* Pods_K_Connect_IOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C415E9A7DB1711A5E9FF4804 /* Pods_K_Connect_IOS.framework */; };
 		CF24914427D9B9550038D704 /* LoadingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF24914327D9B9550038D704 /* LoadingService.swift */; };
 		CF24919527D9DD2A0038D704 /* AdminEmployeeDetailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF24918C27D9DD2A0038D704 /* AdminEmployeeDetailPage.swift */; };
@@ -48,6 +49,7 @@
 
 /* Begin PBXFileReference section */
 		327E64258088FF5B8DC2B6DA /* Pods-K-Connect-IOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-K-Connect-IOS.release.xcconfig"; path = "Target Support Files/Pods-K-Connect-IOS/Pods-K-Connect-IOS.release.xcconfig"; sourceTree = "<group>"; };
+		7F01C23227F842C0003A6D8B /* JoinController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinController.swift; sourceTree = "<group>"; };
 		C415E9A7DB1711A5E9FF4804 /* Pods_K_Connect_IOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_K_Connect_IOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF24914327D9B9550038D704 /* LoadingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingService.swift; sourceTree = "<group>"; };
 		CF24918C27D9DD2A0038D704 /* AdminEmployeeDetailPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminEmployeeDetailPage.swift; sourceTree = "<group>"; };
@@ -102,6 +104,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F01C23427F8432B003A6D8B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CFAB216227BA531A002B2E3C /* Main.storyboard */,
+				CFAB216027BA531A002B2E3C /* ViewController.swift */,
+				CFA01CEE27BA583800258455 /* ChangePasswordView.swift */,
+				7F01C23227F842C0003A6D8B /* JoinController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		CF7D5FC727BE434000D3B1C1 /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,11 +196,9 @@
 				CFA01CE827BA57AC00258455 /* Common */,
 				CFA01CE727BA57A500258455 /* Admin */,
 				CFA01CE627BA579E00258455 /* Employee */,
-				CFAB215C27BA531A002B2E3C /* AppDelegate.swift */,
+				7F01C23427F8432B003A6D8B /* Main */,
 				CFAB215E27BA531A002B2E3C /* SceneDelegate.swift */,
-				CFAB216027BA531A002B2E3C /* ViewController.swift */,
-				CFAB216227BA531A002B2E3C /* Main.storyboard */,
-				CFA01CEE27BA583800258455 /* ChangePasswordView.swift */,
+				CFAB215C27BA531A002B2E3C /* AppDelegate.swift */,
 				CFAB216527BA531B002B2E3C /* Assets.xcassets */,
 				CFAB217027BA5434002B2E3C /* logo.png */,
 				CFAB216727BA531B002B2E3C /* LaunchScreen.storyboard */,
@@ -343,6 +354,7 @@
 				CFAB216127BA531A002B2E3C /* ViewController.swift in Sources */,
 				CF24919A27D9DD2A0038D704 /* AdminNewEmployeePage.swift in Sources */,
 				CF7D5FC227BE045900D3B1C1 /* EmployeeMainPage.swift in Sources */,
+				7F01C23327F842C0003A6D8B /* JoinController.swift in Sources */,
 				CFAB215D27BA531A002B2E3C /* AppDelegate.swift in Sources */,
 				CF91364C27C471F8006EE678 /* EmployeeVacationApplication.swift in Sources */,
 				CF7D5FD327BF970000D3B1C1 /* EmployeeVacationInfo.swift in Sources */,

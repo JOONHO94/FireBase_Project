@@ -32,6 +32,14 @@ class ViewController: UIViewController {
         
     }
     
+    @IBAction func Btn_GoJoin(_ sender: Any) {
+        
+        if let Controller = self.storyboard?.instantiateViewController(withIdentifier: "JoinController") {
+            self.navigationController?
+                .pushViewController(Controller,animated: true)
+        }
+        
+    }
     func login(){
         
         let userId = userIdInput.text!
@@ -58,9 +66,8 @@ class ViewController: UIViewController {
                 request.setValue("application/json", forHTTPHeaderField: "Content-Type")
                 request.timeoutInterval = 10
                 
-                //let params = ["email" : "\(userId)","password" : "\(userPwd)"] as Dictionary
+                let params = ["email" : "\(userId)","password" : "\(userPwd)"] as Dictionary
         
-                let params = ["email" : "leejh0815@ksmartech.com","password" : "dlwnsguq0815!"] as Dictionary
                 
                 do{
                     try request.httpBody = JSONSerialization.data(withJSONObject: params, options: [])
