@@ -55,7 +55,7 @@ class EmployeeApprovalInfo : UIViewController{
         vacationId = UserDefaults.standard.string(forKey: "approvalVacationId")!
     }
     @IBAction func denyBtn(_ sender: Any) { //반려버튼
-        let url = "https://kconnect.ksmartech.com:8443/vacation/deny/\(vacationId)"
+        let url = "https://"
         var request = URLRequest(url: URL(string: url)!)
         request.httpMethod = "DELETE"
         request.headers = APIManager.getAPIHeader()
@@ -120,7 +120,7 @@ class EmployeeApprovalInfo : UIViewController{
     }
     @IBAction func okBtn(_ sender: Any) {
         LoadingService.showLoading()
-        let url = "https://kconnect.ksmartech.com:8443/vacation/\(vacationId)"
+        let url = "https://"
         var request = URLRequest(url: URL(string: url)!)
         request.httpMethod = "PUT"
         request.headers = APIManager.getAPIHeader()

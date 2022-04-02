@@ -268,7 +268,7 @@ class EmployeeMainPage : UIViewController, UITableViewDataSource, UITableViewDel
      func getVacationHistory(){
      
          let year = getYear()
-         let url = "https://kconnect.ksmartech.com:8443/vacation/\(year)?page=0&size=20"
+         let url = "https://"
          var request = URLRequest(url: URL(string: url)!)
          request.httpMethod = "GET"
          request.headers = APIManager.getAPIHeader()
@@ -316,7 +316,7 @@ class EmployeeMainPage : UIViewController, UITableViewDataSource, UITableViewDel
     //결재리스트 가져오는거
     func getApprovalList(){
         print("getApprovalList 실행")
-        let url = "https://kconnect.ksmartech.com:8443/vacation/todo?page=0&size=30"
+        let url = "https://"
         var request = URLRequest(url: URL(string: url)!)
         request.httpMethod = "GET"
         request.headers = APIManager.getAPIHeader()

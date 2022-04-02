@@ -65,7 +65,7 @@ class EmployeeVacationHistory : UIViewController, UITableViewDataSource, UITable
     }
     func getProfile(var year : String){
         let userId = UserDefaults.standard.string(forKey: "USER_ID")!
-        let url = "https://kconnect.ksmartech.com:8443/profile/\(userId)/\(year)"
+        let url = "https://"
         var request = URLRequest(url: URL(string: url)!)
         request.httpMethod = "GET"
         request.headers = APIManager.getAPIHeader()
@@ -147,7 +147,7 @@ class EmployeeVacationHistory : UIViewController, UITableViewDataSource, UITable
     }
     
     func getVacationHistory(var year : String){
-        let url = "https://kconnect.ksmartech.com:8443/vacation/\(year)?page=0&size=50"
+        let url = "https://"
         var request = URLRequest(url: URL(string: url)!)
         request.httpMethod = "GET"
         request.headers = APIManager.getAPIHeader()
@@ -192,7 +192,7 @@ class EmployeeVacationHistory : UIViewController, UITableViewDataSource, UITable
     }
     func getVacationHistory(){
         let year = getYear()
-        let url = "https://kconnect.ksmartech.com:8443/vacation/\(year)?page=0&size=50"
+        let url = "https://"
         var request = URLRequest(url: URL(string: url)!)
         request.httpMethod = "GET"
         request.headers = APIManager.getAPIHeader()

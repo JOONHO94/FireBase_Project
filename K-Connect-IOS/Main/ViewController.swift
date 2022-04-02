@@ -11,6 +11,7 @@ import SwiftKeychainWrapper
 import JWTDecode
 import Firebase
 import FirebaseAuth
+import Lottie
 
 //pod 'Firebase/Auth' 유저 관련 pod
 //pod 'Firebase/Database' Realtime Database 관련 pod
@@ -26,7 +27,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        imgLogo = UIImage(named: "logo.png")
+        imgLogo = UIImage(named: "Main.gif")
         imgView.image = imgLogo
         print("ViewController")
     }
@@ -85,7 +86,7 @@ class ViewController: UIViewController {
 //            self.present(alert, animated: true, completion: nil)
 //            return
 //        }
-                let url = "https://kconnect.ksmartech.com:8443/login"
+                let url = "https://"
                 var request = URLRequest(url: URL(string: url)!)
                 request.httpMethod = "POST"
                 request.setValue("application/json", forHTTPHeaderField: "Content-Type")

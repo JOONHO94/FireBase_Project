@@ -103,12 +103,14 @@ PODS:
   - JWTDecode (2.6.3)
   - leveldb-library (1.22.1)
   - LNZTreeView (1.1.2)
+  - lottie-ios (3.3.0)
   - nanopb (2.30908.0):
     - nanopb/decode (= 2.30908.0)
     - nanopb/encode (= 2.30908.0)
   - nanopb/decode (2.30908.0)
   - nanopb/encode (2.30908.0)
   - PromisesObjC (2.0.0)
+  - SoftButton (0.1.0)
   - SwiftKeychainWrapper (4.0.1)
 
 DEPENDENCIES:
@@ -121,6 +123,8 @@ DEPENDENCIES:
   - FSCalendar
   - JWTDecode
   - LNZTreeView
+  - lottie-ios
+  - SoftButton
   - SwiftKeychainWrapper
 
 SPEC REPOS:
@@ -143,8 +147,10 @@ SPEC REPOS:
     - JWTDecode
     - leveldb-library
     - LNZTreeView
+    - lottie-ios
     - nanopb
     - PromisesObjC
+    - SoftButton
     - SwiftKeychainWrapper
 
 SPEC CHECKSUMS:
@@ -166,10 +172,12 @@ SPEC CHECKSUMS:
   JWTDecode: 33e5e26e5ddbd21b2065820894c08fef0cad9509
   leveldb-library: 50c7b45cbd7bf543c81a468fe557a16ae3db8729
   LNZTreeView: f04b4a96e5780f5071f8c08b0f6f6554775e46f4
+  lottie-ios: 6ac74dcc09904798f59b18cb3075c089d76be9ae
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   PromisesObjC: 68159ce6952d93e17b2dfe273b8c40907db5ba58
+  SoftButton: 047bf63ec0c6b6c6a19c02a6f9e5ee4c79d853f3
   SwiftKeychainWrapper: 807ba1d63c33a7d0613288512399cd1eda1e470c
 
-PODFILE CHECKSUM: a30132fed02e462f0e74cd9b8bd741568f427bd4
+PODFILE CHECKSUM: b685f1686d34f08a6c5f54968ab423c84fd18f46
 
 COCOAPODS: 1.11.2

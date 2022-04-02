@@ -81,7 +81,7 @@ class EmployeeVacationInfo : UIViewController {
         LoadingService.showLoading()
         print("휴가 신청 취소 버튼 눌림.")
         print("applicationId: ", applicationId)
-        let url = "https://kconnect.ksmartech.com:8443/vacation/\(applicationId)"
+        let url = "https://"
         var request = URLRequest(url: URL(string: url)!)
         request.httpMethod = "DELETE"
         request.headers = APIManager.getAPIHeader()

@@ -257,7 +257,7 @@ class EmployeeVacationApplication : UIViewController, UIPickerViewDelegate, UIPi
                     print("endDate: ", endDate)
                     
                     let userId = UserDefaults.standard.string(forKey: "USER_ID")!
-                    let url = "https://kconnect.ksmartech.com:8443/vacation/days/\(startDate)/\(endDate)"
+                    let url = "https://"
                     var request = URLRequest(url: URL(string: url)!)
                     request.httpMethod = "GET"
                     request.headers = APIManager.getAPIHeader()
@@ -354,7 +354,7 @@ class EmployeeVacationApplication : UIViewController, UIPickerViewDelegate, UIPi
         LoadingService.showLoading()
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat == "yyyyMMdd"
-        let url = "https://kconnect.ksmartech.com:8443/vacation"
+        let url = "https://"
         var request = URLRequest(url: URL(string: url)!)
         request.httpMethod = "POST"
         request.headers = APIManager.getAPIHeader()

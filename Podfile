@@ -14,6 +14,8 @@ pod 'SwiftKeychainWrapper'
 pod 'JWTDecode'
 pod 'BulletinBoard'
 pod 'DropDown'
+pod 'lottie-ios'
+pod 'SoftButton'
 
 pod 'Firebase/Analytics'
 pod 'Firebase/Database'
