@@ -46,7 +46,6 @@
 		CFAB216427BA531A002B2E3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFAB216227BA531A002B2E3C /* Main.storyboard */; };
 		CFAB216627BA531B002B2E3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFAB216527BA531B002B2E3C /* Assets.xcassets */; };
 		CFAB216927BA531B002B2E3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFAB216727BA531B002B2E3C /* LaunchScreen.storyboard */; };
-		CFAB217127BA5434002B2E3C /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = CFAB217027BA5434002B2E3C /* logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,7 +91,6 @@
 		CFAB216527BA531B002B2E3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFAB216827BA531B002B2E3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CFAB216A27BA531B002B2E3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CFAB217027BA5434002B2E3C /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		F6A3428C780EB43B551C6683 /* Pods-K-Connect-IOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-K-Connect-IOS.debug.xcconfig"; path = "Target Support Files/Pods-K-Connect-IOS/Pods-K-Connect-IOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -126,7 +124,7 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
-		CFA01CE627BA579E00258455 /* Employee */ = {
+		CFA01CE627BA579E00258455 /* User */ = {
 			isa = PBXGroup;
 			children = (
 				CF7D5FBF27BE044000D3B1C1 /* EmployeeStoryboard.storyboard */,
@@ -139,12 +137,13 @@
 				CF9972D227D59AE60004F351 /* EmployeeVacationInfoLeader.swift */,
 				CF24914327D9B9550038D704 /* LoadingService.swift */,
 			);
-			name = Employee;
+			name = User;
 			sourceTree = "<group>";
 		};
 		CFA01CE727BA57A500258455 /* Admin */ = {
 			isa = PBXGroup;
 			children = (
+				CF24919227D9DD2A0038D704 /* AdminStoryboard.storyboard */,
 				CF24919427D9DD2A0038D704 /* AdminChangeEmployeePage.swift */,
 				CF24918E27D9DD2A0038D704 /* AdminDetailPage.swift */,
 				CF24918C27D9DD2A0038D704 /* AdminEmployeeDetailPage.swift */,
@@ -152,7 +151,6 @@
 				CF24919027D9DD2A0038D704 /* AdminGroupManagePage.swift */,
 				CF24918F27D9DD2A0038D704 /* AdminMainPage.swift */,
 				CF24919127D9DD2A0038D704 /* AdminNewEmployeePage.swift */,
-				CF24919227D9DD2A0038D704 /* AdminStoryboard.storyboard */,
 				CF24919327D9DD2A0038D704 /* AdminVacationHistoryPage.swift */,
 			);
 			path = Admin;
@@ -199,12 +197,11 @@
 				CF7D5FC727BE434000D3B1C1 /* Network */,
 				CFA01CE827BA57AC00258455 /* Common */,
 				CFA01CE727BA57A500258455 /* Admin */,
-				CFA01CE627BA579E00258455 /* Employee */,
+				CFA01CE627BA579E00258455 /* User */,
 				7F01C23427F8432B003A6D8B /* Main */,
 				CFAB215E27BA531A002B2E3C /* SceneDelegate.swift */,
 				CFAB215C27BA531A002B2E3C /* AppDelegate.swift */,
 				CFAB216527BA531B002B2E3C /* Assets.xcassets */,
-				CFAB217027BA5434002B2E3C /* logo.png */,
 				7F053F1727F8883C0075C6A4 /* Main.gif */,
 				CFAB216727BA531B002B2E3C /* LaunchScreen.storyboard */,
 				CFAB216A27BA531B002B2E3C /* Info.plist */,
@@ -290,7 +287,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFAB217127BA5434002B2E3C /* logo.png in Resources */,
 				CFAB216927BA531B002B2E3C /* LaunchScreen.storyboard in Resources */,
 				CFAB216627BA531B002B2E3C /* Assets.xcassets in Resources */,
 				CF24919B27D9DD2A0038D704 /* AdminStoryboard.storyboard in Resources */,

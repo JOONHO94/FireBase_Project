@@ -12,6 +12,7 @@ import JWTDecode
 import Firebase
 import FirebaseAuth
 import Lottie
+import SoftButton
 
 //pod 'Firebase/Auth' 유저 관련 pod
 //pod 'Firebase/Database' Realtime Database 관련 pod
@@ -20,13 +21,17 @@ class ViewController: UIViewController {
     
     var imgLogo : UIImage?
     var data : Array<Dictionary<String, Any>>?
+    let btn = SoftButton()
     
+    @IBOutlet weak var Btn_Join: SoftButton!   //SoftButton
     @IBOutlet var userIdInput: UITextField!
     @IBOutlet var userPwdInput: UITextField!
     @IBOutlet var imgView: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        Btn_Join.makeNeuromorphic(superView: self.view) // Add this line
         imgLogo = UIImage(named: "Main.gif")
         imgView.image = imgLogo
         print("ViewController")

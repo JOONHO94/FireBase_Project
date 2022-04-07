@@ -42,14 +42,16 @@
                                 <rect key="frame" x="162" y="608" width="91" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="회원가입"/>
+                                <buttonConfiguration key="configuration" style="plain" title="회원가입">
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="Btn_GoJoin:" destination="90b-w9-5Pm" eventType="touchUpInside" id="GwZ-XO-r4J"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="b3h-SZ-0yu"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Q3x-xX-XfT" firstAttribute="centerX" secondItem="9ep-0T-4V2" secondAttribute="centerX" id="1wU-rH-gCL"/>
                             <constraint firstItem="F2r-d9-gMf" firstAttribute="centerX" secondItem="9ep-0T-4V2" secondAttribute="centerX" id="Ea6-ZM-8mv"/>
@@ -64,6 +66,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="lAe-Pu-pvT"/>
                     <connections>
+                        <outlet property="Btn_Join" destination="XYV-uR-94f" id="chd-EB-ILw"/>
                         <outlet property="imgView" destination="SYo-iJ-44j" id="c6M-u0-Nqa"/>
                         <outlet property="userIdInput" destination="Q3x-xX-XfT" id="RJD-YK-Vaq"/>
                         <outlet property="userPwdInput" destination="FQH-7n-fDm" id="khV-6Z-3gN"/>

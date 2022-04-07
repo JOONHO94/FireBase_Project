@@ -8,11 +8,9 @@ target 'K-Connect-IOS' do
   # Pods for K-Connect-IOS
 
 pod 'FSCalendar'
-pod 'LNZTreeView'
 pod 'Alamofire', '~> 5.5'
 pod 'SwiftKeychainWrapper'
 pod 'JWTDecode'
-pod 'BulletinBoard'
 pod 'DropDown'
 pod 'lottie-ios'
 pod 'SoftButton'
