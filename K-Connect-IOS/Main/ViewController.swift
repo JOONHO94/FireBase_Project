@@ -21,17 +21,41 @@ class ViewController: UIViewController {
     
     var imgLogo : UIImage?
     var data : Array<Dictionary<String, Any>>?
-    let btn = SoftButton()
+    //let btn = SoftButton()
     
     @IBOutlet weak var Btn_Join: SoftButton!   //SoftButton
+    @IBOutlet weak var Btn_Login: SoftButton!
+    
     @IBOutlet var userIdInput: UITextField!
     @IBOutlet var userPwdInput: UITextField!
     @IBOutlet var imgView: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        //fireBase는 로그인을 계속 유지 시키고 있다
+        if let user = Auth.auth().currentUser {
+            userPwdInput.placeholder = "이미 로그인 된 상태입니다."
+//            let storyboard = UIStoryboard(name: "EmployeeStoryboard", bundle: nil)
+//
+//            let settingBoard = storyboard.instantiateViewController(withIdentifier: "UserViewNavigation")
+//            settingBoard.modalPresentationStyle = .fullScreen  // 이거 없으면 팝업.
+//            let transition = CATransition()
+//                    transition.duration = 0.5
+//                    transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+//                    transition.type = CATransitionType.push
+//                    transition.subtype = CATransitionSubtype.fromRight
+//                    self.view.window!.layer.add(transition, forKey: nil)
+//            self.present(settingBoard, animated: false, completion: nil)
+            
+        }
+
+
         
-        Btn_Join.makeNeuromorphic(superView: self.view) // Add this line
+        //Btn_Join.makeNeuromorphic(superView: self.view) // Add this line
+        Btn_Login.makeNeuromorphic()
+        self.view.backgroundColor = Btn_Login.backgroundColor // Set view background manually
+        Btn_Join.makeNeuromorphic()
+        self.view.backgroundColor = Btn_Join.backgroundColor // Set view background manually
         imgLogo = UIImage(named: "Main.gif")
         imgView.image = imgLogo
         print("ViewController")
@@ -47,9 +71,10 @@ class ViewController: UIViewController {
             guard let user = authResult?.user else { return }
             
             if error == nil {
-                print("login success")
-                print(user)
+                print("------login success----")
+                print("Test Login Btn : \(user)")
             } else {
+                print("---------------------------error")
                 print("login fail")
             }
         }

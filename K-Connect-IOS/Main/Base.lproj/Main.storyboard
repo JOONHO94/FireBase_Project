@@ -22,29 +22,36 @@
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="이메일" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q3x-xX-XfT">
                                 <rect key="frame" x="40" y="431" width="334" height="34"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FQH-7n-fDm">
                                 <rect key="frame" x="40" y="485" width="334" height="34"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F2r-d9-gMf">
-                                <rect key="frame" x="140" y="569" width="134" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="로그인"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F2r-d9-gMf" customClass="SoftButton" customModule="SoftButton">
+                                <rect key="frame" x="107" y="569" width="200" height="23"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="로그인">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="LoginBtn:" destination="90b-w9-5Pm" eventType="touchUpInside" id="bgr-En-Xba"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XYV-uR-94f" customClass="SoftButton" customModule="SoftButton">
-                                <rect key="frame" x="162" y="608" width="91" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="회원가입">
-                                    <color key="baseForegroundColor" systemColor="labelColor"/>
-                                </buttonConfiguration>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XYV-uR-94f" customClass="SoftButton" customModule="SoftButton">
+                                <rect key="frame" x="107" y="618" width="200" height="30"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="회원가입">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
                                 <connections>
                                     <action selector="Btn_GoJoin:" destination="90b-w9-5Pm" eventType="touchUpInside" id="GwZ-XO-r4J"/>
                                 </connections>
@@ -54,12 +61,15 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Q3x-xX-XfT" firstAttribute="centerX" secondItem="9ep-0T-4V2" secondAttribute="centerX" id="1wU-rH-gCL"/>
+                            <constraint firstItem="XYV-uR-94f" firstAttribute="width" secondItem="FQH-7n-fDm" secondAttribute="width" multiplier="3:5" id="7Vv-DG-Jh3"/>
                             <constraint firstItem="F2r-d9-gMf" firstAttribute="centerX" secondItem="9ep-0T-4V2" secondAttribute="centerX" id="Ea6-ZM-8mv"/>
+                            <constraint firstItem="XYV-uR-94f" firstAttribute="centerX" secondItem="9ep-0T-4V2" secondAttribute="centerX" id="OBG-26-X2H"/>
                             <constraint firstItem="FQH-7n-fDm" firstAttribute="top" secondItem="Q3x-xX-XfT" secondAttribute="bottom" constant="20" id="Te6-Fr-Xi3"/>
                             <constraint firstItem="FQH-7n-fDm" firstAttribute="centerX" secondItem="9ep-0T-4V2" secondAttribute="centerX" id="UnU-vq-tW2"/>
+                            <constraint firstItem="XYV-uR-94f" firstAttribute="top" secondItem="F2r-d9-gMf" secondAttribute="bottom" constant="20" id="WzY-HX-YzG"/>
                             <constraint firstItem="FQH-7n-fDm" firstAttribute="leading" secondItem="b3h-SZ-0yu" secondAttribute="leading" constant="40" id="YRC-XA-x0e"/>
                             <constraint firstItem="Q3x-xX-XfT" firstAttribute="leading" secondItem="b3h-SZ-0yu" secondAttribute="leading" constant="40" id="lqr-l5-KZ8"/>
-                            <constraint firstItem="F2r-d9-gMf" firstAttribute="width" secondItem="FQH-7n-fDm" secondAttribute="width" multiplier="2:5" id="noR-Gc-3ba"/>
+                            <constraint firstItem="F2r-d9-gMf" firstAttribute="width" secondItem="FQH-7n-fDm" secondAttribute="width" multiplier="3:5" id="noR-Gc-3ba"/>
                             <constraint firstItem="Q3x-xX-XfT" firstAttribute="centerY" secondItem="9ep-0T-4V2" secondAttribute="centerY" id="o9B-le-vwa"/>
                             <constraint firstItem="F2r-d9-gMf" firstAttribute="top" secondItem="FQH-7n-fDm" secondAttribute="bottom" constant="50" id="wTE-ZM-ONb"/>
                         </constraints>
@@ -67,6 +77,7 @@
                     <navigationItem key="navigationItem" id="lAe-Pu-pvT"/>
                     <connections>
                         <outlet property="Btn_Join" destination="XYV-uR-94f" id="chd-EB-ILw"/>
+                        <outlet property="Btn_Login" destination="F2r-d9-gMf" id="b53-XN-HCV"/>
                         <outlet property="imgView" destination="SYo-iJ-44j" id="c6M-u0-Nqa"/>
                         <outlet property="userIdInput" destination="Q3x-xX-XfT" id="RJD-YK-Vaq"/>
                         <outlet property="userPwdInput" destination="FQH-7n-fDm" id="khV-6Z-3gN"/>
@@ -75,6 +86,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZqD-dS-BT9" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="83.705357142857139"/>
+        </scene>
+        <!--Main Controller-->
+        <scene sceneID="f7J-QV-Z4z">
+            <objects>
+                <viewController storyboardIdentifier="MainController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="o6M-07-ssr" customClass="MainController" customModule="K_Connect_IOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="urT-YY-TTv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="qOC-Uz-c6n"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="btn_tab_home_off" id="pE5-5a-ecF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NYa-gE-HEQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2852" y="84"/>
+        </scene>
+        <!--EmployeeStoryboard-->
+        <scene sceneID="E5h-W7-fHY">
+            <objects>
+                <viewControllerPlaceholder storyboardName="EmployeeStoryboard" id="Awv-A4-z8y" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="BiP-EO-uqG"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c9C-hu-jxZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1785" y="526"/>
+        </scene>
+        <!--Information-->
+        <scene sceneID="9LK-Cx-ile">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Information" id="wgu-ZJ-VoC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="WBG-Ah-gxe"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Roa-kg-mEk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1995" y="526"/>
         </scene>
         <!--Change Password View-->
         <scene sceneID="rar-sE-5Xy">
@@ -197,7 +244,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ane-si-yVl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="929" y="739"/>
+            <point key="canvasLocation" x="929" y="719"/>
         </scene>
         <!--Join Controller-->
         <scene sceneID="QSH-Im-1Nc">
@@ -263,7 +310,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u5p-EV-HBf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1624.6376811594205" y="83.705357142857139"/>
+            <point key="canvasLocation" x="929" y="-552"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bUm-Si-hcW">
@@ -281,15 +328,39 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9ty-AW-YvM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18.840579710144929" y="83.705357142857139"/>
+            <point key="canvasLocation" x="213" y="84"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Z1C-t1-GVI">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="3x1-d1-o5v" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nuV-hd-DGp">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="o6M-07-ssr" kind="relationship" relationship="viewControllers" id="HDQ-9j-EKQ"/>
+                        <segue destination="Awv-A4-z8y" kind="relationship" relationship="viewControllers" id="Ou6-av-e8m"/>
+                        <segue destination="wgu-ZJ-VoC" kind="relationship" relationship="viewControllers" id="9m2-45-OPg"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WhG-H7-05a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2155" y="84"/>
         </scene>
     </scenes>
     <resources>
+        <image name="btn_tab_home_off" width="21" height="20"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

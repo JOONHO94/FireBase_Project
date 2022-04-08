@@ -8,6 +8,27 @@
 
 //로그인 토큰 값 모델
 import Foundation
+import FirebaseAuth
+//firebase 로그인 함수
+func Login(_ email: String, _ password: String) {
+    Auth.auth().signIn(withEmail: email, password: password) {
+        (authResult, error) in
+        guard let user = authResult?.user else { return }
+        
+        if error == nil {
+            print("------login success----")
+            print("Test Login Btn : \(user)")
+        } else {
+            print("---------------------------error")
+            print("login fail")
+        }
+    }
+    
+}
+
+func Logout() {
+    
+}
 
 // MARK: - Welcome
 struct LoginModel: Codable {

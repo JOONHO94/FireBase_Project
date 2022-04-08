@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6Uz-7a-fsS">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -16,15 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LoI-AG-xd0">
-                                <rect key="frame" x="356" y="40" width="38" height="54"/>
-                                <color key="tintColor" systemColor="labelColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="rectangle.portrait.and.arrow.right" catalog="system"/>
-                                <connections>
-                                    <action selector="logoutBtn:" destination="LCM-rH-ckb" eventType="touchUpInside" id="QRj-PM-cvg"/>
-                                </connections>
-                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="rectangle.stack.person.crop" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="orE-rQ-7OE">
                                 <rect key="frame" x="20" y="84" width="37" height="46"/>
                                 <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -390,8 +381,6 @@
                         <constraints>
                             <constraint firstItem="orE-rQ-7OE" firstAttribute="leading" secondItem="acp-rb-8Wn" secondAttribute="leadingMargin" id="4qV-Q1-pPp"/>
                             <constraint firstItem="KP9-fS-bYp" firstAttribute="centerX" secondItem="4pe-2h-k7E" secondAttribute="centerX" id="DKL-lP-JJI"/>
-                            <constraint firstItem="KP9-fS-bYp" firstAttribute="top" secondItem="LoI-AG-xd0" secondAttribute="top" id="GHS-Dh-rfl"/>
-                            <constraint firstItem="LoI-AG-xd0" firstAttribute="leading" secondItem="KP9-fS-bYp" secondAttribute="trailing" constant="44" id="Mu4-wm-ua8"/>
                             <constraint firstItem="KP9-fS-bYp" firstAttribute="top" secondItem="acp-rb-8Wn" secondAttribute="topMargin" constant="-4" id="Q3N-tb-gEQ"/>
                             <constraint firstAttribute="bottom" secondItem="4pe-2h-k7E" secondAttribute="bottom" id="XSf-bk-jvz"/>
                             <constraint firstItem="4pe-2h-k7E" firstAttribute="trailing" secondItem="K7a-sd-AxP" secondAttribute="trailing" id="bXQ-An-5wk"/>
@@ -399,11 +388,12 @@
                             <constraint firstItem="4pe-2h-k7E" firstAttribute="top" secondItem="KP9-fS-bYp" secondAttribute="bottom" constant="34" id="fjX-cf-Kaj"/>
                             <constraint firstItem="4pe-2h-k7E" firstAttribute="leading" secondItem="K7a-sd-AxP" secondAttribute="leading" id="hBE-G2-lKg"/>
                             <constraint firstItem="KP9-fS-bYp" firstAttribute="leading" secondItem="orE-rQ-7OE" secondAttribute="trailing" constant="45" id="hYd-8I-3Kg"/>
-                            <constraint firstItem="KP9-fS-bYp" firstAttribute="centerY" secondItem="LoI-AG-xd0" secondAttribute="centerY" id="hh8-7b-Io5"/>
                             <constraint firstItem="4pe-2h-k7E" firstAttribute="top" secondItem="orE-rQ-7OE" secondAttribute="bottom" constant="43" id="wBx-xK-CSC"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="메인화면" id="Wdw-rB-kPU"/>
+                    <navigationItem key="navigationItem" title="메인화면" id="Wdw-rB-kPU">
+                        <barButtonItem key="rightBarButtonItem" image="bell.fill" catalog="system" style="plain" id="1Tx-WQ-MBr"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="applicationDate" destination="fAC-GW-tLo" id="44x-Ie-uMi"/>
                         <outlet property="applicationDateScroll" destination="fAC-GW-tLo" id="2YH-dv-rUF"/>
@@ -443,7 +433,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uG3-4d-lyC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="517.39130434782612" y="27.455357142857142"/>
+            <point key="canvasLocation" x="942" y="15"/>
         </scene>
         <!--Employee Vacation Application-->
         <scene sceneID="0HM-lH-4ox">
@@ -730,7 +720,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2vY-WF-d6I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-394.20289855072468" y="677.67857142857144"/>
+            <point key="canvasLocation" x="281" y="745"/>
         </scene>
         <!--Employee Team Vacation Info-->
         <scene sceneID="jGP-qF-P48">
@@ -920,7 +910,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="auJ-TU-TSG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-394.20289855072468" y="1330.5803571428571"/>
+            <point key="canvasLocation" x="925" y="745"/>
         </scene>
         <!--Employee Vacation History-->
         <scene sceneID="UyM-ZO-ioa">
@@ -1171,7 +1161,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EFx-Fp-S6q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="289.85507246376812" y="677.67857142857144"/>
+            <point key="canvasLocation" x="1565" y="745"/>
         </scene>
         <!--Employee Vacation Info-->
         <scene sceneID="ejc-1I-6vq">
@@ -1401,7 +1391,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kox-9s-o2x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1200" y="26.785714285714285"/>
+            <point key="canvasLocation" x="2222" y="15"/>
         </scene>
         <!--Employee Approval Info-->
         <scene sceneID="HEp-p2-p7m">
@@ -1653,7 +1643,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Os2-6u-tzQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1884.057971014493" y="26.785714285714285"/>
+            <point key="canvasLocation" x="2926" y="15"/>
         </scene>
         <!--Employee Vacation Info Leader-->
         <scene sceneID="gR7-WB-T59">
@@ -1772,12 +1762,27 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Lw-9L-Y6p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="289.85507246376812" y="1330.5803571428571"/>
+            <point key="canvasLocation" x="3622" y="27"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="sV1-MP-e9S">
+            <objects>
+                <viewController id="6Uz-7a-fsS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tOs-sy-MPv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="D6Z-xa-LHO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i5F-WF-5eh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-106" y="15"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="B45-gi-s35">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kCH-yR-bi3" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="UserViewNavigation" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kCH-yR-bi3" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="c28-mM-BKF">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -1790,14 +1795,14 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IX7-Za-0p2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-392.75362318840581" y="27.455357142857142"/>
+            <point key="canvasLocation" x="925" y="-678"/>
         </scene>
     </scenes>
     <resources>
         <image name="arrow.down.app" catalog="system" width="128" height="114"/>
+        <image name="bell.fill" catalog="system" width="128" height="124"/>
         <image name="calendar" catalog="system" width="128" height="106"/>
         <image name="chevron.right.square" catalog="system" width="128" height="114"/>
-        <image name="rectangle.portrait.and.arrow.right" catalog="system" width="128" height="108"/>
         <image name="rectangle.stack.person.crop" catalog="system" width="128" height="122"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

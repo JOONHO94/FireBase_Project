@@ -10,6 +10,8 @@
 		7F01C23327F842C0003A6D8B /* JoinController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F01C23227F842C0003A6D8B /* JoinController.swift */; };
 		7F053F1827F8883C0075C6A4 /* Main.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7F053F1727F8883C0075C6A4 /* Main.gif */; };
 		7F572BF527F85C0700C1809D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7F572BF427F85C0700C1809D /* GoogleService-Info.plist */; };
+		7F7F527C28006878008F8908 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7F527B28006878008F8908 /* MainController.swift */; };
+		7F7F527E280070DF008F8908 /* Information.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F7F527D280070DF008F8908 /* Information.storyboard */; };
 		CB2E1ECB2436B9BBCB0C5F51 /* Pods_K_Connect_IOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C415E9A7DB1711A5E9FF4804 /* Pods_K_Connect_IOS.framework */; };
 		CF24914427D9B9550038D704 /* LoadingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF24914327D9B9550038D704 /* LoadingService.swift */; };
 		CF24919527D9DD2A0038D704 /* AdminEmployeeDetailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF24918C27D9DD2A0038D704 /* AdminEmployeeDetailPage.swift */; };
@@ -53,6 +55,8 @@
 		7F01C23227F842C0003A6D8B /* JoinController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinController.swift; sourceTree = "<group>"; };
 		7F053F1727F8883C0075C6A4 /* Main.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = Main.gif; path = ../../../../Downloads/Main.gif; sourceTree = "<group>"; };
 		7F572BF427F85C0700C1809D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7F7F527B28006878008F8908 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		7F7F527D280070DF008F8908 /* Information.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Information.storyboard; sourceTree = "<group>"; };
 		C415E9A7DB1711A5E9FF4804 /* Pods_K_Connect_IOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_K_Connect_IOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF24914327D9B9550038D704 /* LoadingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingService.swift; sourceTree = "<group>"; };
 		CF24918C27D9DD2A0038D704 /* AdminEmployeeDetailPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminEmployeeDetailPage.swift; sourceTree = "<group>"; };
@@ -113,8 +117,17 @@
 				CFAB216027BA531A002B2E3C /* ViewController.swift */,
 				CFA01CEE27BA583800258455 /* ChangePasswordView.swift */,
 				7F01C23227F842C0003A6D8B /* JoinController.swift */,
+				7F7F527B28006878008F8908 /* MainController.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		7F7F527A280067EF008F8908 /* Information */ = {
+			isa = PBXGroup;
+			children = (
+				7F7F527D280070DF008F8908 /* Information.storyboard */,
+			);
+			path = Information;
 			sourceTree = "<group>";
 		};
 		CF7D5FC727BE434000D3B1C1 /* Network */ = {
@@ -199,8 +212,9 @@
 				CFA01CE727BA57A500258455 /* Admin */,
 				CFA01CE627BA579E00258455 /* User */,
 				7F01C23427F8432B003A6D8B /* Main */,
-				CFAB215E27BA531A002B2E3C /* SceneDelegate.swift */,
+				7F7F527A280067EF008F8908 /* Information */,
 				CFAB215C27BA531A002B2E3C /* AppDelegate.swift */,
+				CFAB215E27BA531A002B2E3C /* SceneDelegate.swift */,
 				CFAB216527BA531B002B2E3C /* Assets.xcassets */,
 				7F053F1727F8883C0075C6A4 /* Main.gif */,
 				CFAB216727BA531B002B2E3C /* LaunchScreen.storyboard */,
@@ -290,6 +304,7 @@
 				CFAB216927BA531B002B2E3C /* LaunchScreen.storyboard in Resources */,
 				CFAB216627BA531B002B2E3C /* Assets.xcassets in Resources */,
 				CF24919B27D9DD2A0038D704 /* AdminStoryboard.storyboard in Resources */,
+				7F7F527E280070DF008F8908 /* Information.storyboard in Resources */,
 				CFAB216427BA531A002B2E3C /* Main.storyboard in Resources */,
 				CF7D5FC027BE044000D3B1C1 /* EmployeeStoryboard.storyboard in Resources */,
 				7F053F1827F8883C0075C6A4 /* Main.gif in Resources */,
@@ -370,6 +385,7 @@
 				CFAB215F27BA531A002B2E3C /* SceneDelegate.swift in Sources */,
 				CF7D5FAE27BCD9D500D3B1C1 /* UserModel.swift in Sources */,
 				CF24919C27D9DD2A0038D704 /* AdminVacationHistoryPage.swift in Sources */,
+				7F7F527C28006878008F8908 /* MainController.swift in Sources */,
 				CF91365827CC9DE7006EE678 /* TotalDaysModel.swift in Sources */,
 				CF24919D27D9DD2A0038D704 /* AdminChangeEmployeePage.swift in Sources */,
 				CFA01CEF27BA583800258455 /* ChangePasswordView.swift in Sources */,
