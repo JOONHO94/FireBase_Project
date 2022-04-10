@@ -16,17 +16,22 @@ func Login(_ email: String, _ password: String) {
         guard let user = authResult?.user else { return }
         
         if error == nil {
-            print("------login success----")
-            print("Test Login Btn : \(user)")
+            print("-----login success-----")
+            print("-----Test Login Btn : \(user)-----")
         } else {
-            print("---------------------------error")
-            print("login fail")
+            print("-----login fail error-----")
         }
     }
     
 }
 
 func Logout() {
+    do {
+        try Auth.auth().signOut()
+    } catch let signOutError as NSError {
+        print("-----Logout Error-----")
+        
+    }
     
 }
 
