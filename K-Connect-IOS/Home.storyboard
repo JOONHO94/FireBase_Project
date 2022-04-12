@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6Uz-7a-fsS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kCH-yR-bi3">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -731,19 +731,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="n5J-nN-xWT">
-                                <rect key="frame" x="102" y="79" width="210" height="52"/>
+                                <rect key="frame" x="102" y="79" width="210" height="3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="210" id="TwN-Hh-syw"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="현황" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xeC-7B-qHu">
-                                <rect key="frame" x="20" y="139" width="88" height="29"/>
+                                <rect key="frame" x="20" y="90" width="88" height="29"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rgP-hC-9xM">
-                                <rect key="frame" x="20" y="176" width="374" height="720"/>
+                                <rect key="frame" x="20" y="127" width="374" height="769"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VCl-aA-Ohc">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="1000"/>
@@ -907,24 +907,24 @@
         <scene sceneID="UyM-ZO-ioa">
             <objects>
                 <viewController storyboardIdentifier="EmployeeVacationHistory" useStoryboardIdentifierAsRestorationIdentifier="YES" id="eR4-a6-1TV" customClass="EmployeeVacationHistory" customModule="K_Connect_IOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="DIH-4z-bPh">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="DIH-4z-bPh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nvU-jS-2mw">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nvU-jS-2mw">
                                 <rect key="frame" x="102" y="72" width="210" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="210" id="Cfr-6A-iEe"/>
                                     <constraint firstAttribute="height" constant="35" id="pZc-aw-FBW"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="내역" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3TW-yt-0sL">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="내역" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3TW-yt-0sL">
                                 <rect key="frame" x="36" y="107" width="42" height="29"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gNS-p0-MKb">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gNS-p0-MKb">
                                 <rect key="frame" x="0.0" y="144" width="414" height="752"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Zr-pH-tSl">
@@ -1755,26 +1755,13 @@
             </objects>
             <point key="canvasLocation" x="3622" y="27"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="sV1-MP-e9S">
-            <objects>
-                <viewController id="6Uz-7a-fsS" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="tOs-sy-MPv">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="D6Z-xa-LHO"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="i5F-WF-5eh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-106" y="15"/>
-        </scene>
-        <!--Navigation Controller-->
+        <!--Home-->
         <scene sceneID="B45-gi-s35">
             <objects>
                 <navigationController storyboardIdentifier="UserViewNavigation" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kCH-yR-bi3" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="btn_tab_home_off" id="UAU-Bk-QQS"/>
                     <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="c28-mM-BKF">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1786,12 +1773,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IX7-Za-0p2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="925" y="-678"/>
+            <point key="canvasLocation" x="959" y="-844"/>
         </scene>
     </scenes>
     <resources>
         <image name="arrow.down.app" catalog="system" width="128" height="114"/>
         <image name="bell.fill" catalog="system" width="128" height="124"/>
+        <image name="btn_tab_home_off" width="21" height="20"/>
         <image name="calendar" catalog="system" width="128" height="106"/>
         <image name="chevron.right.square" catalog="system" width="128" height="114"/>
         <image name="rectangle.stack.person.crop" catalog="system" width="128" height="122"/>

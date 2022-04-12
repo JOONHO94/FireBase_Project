@@ -25,7 +25,7 @@
 		CF24919C27D9DD2A0038D704 /* AdminVacationHistoryPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF24919327D9DD2A0038D704 /* AdminVacationHistoryPage.swift */; };
 		CF24919D27D9DD2A0038D704 /* AdminChangeEmployeePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF24919427D9DD2A0038D704 /* AdminChangeEmployeePage.swift */; };
 		CF7D5FAC27BCD98600D3B1C1 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7D5FAB27BCD98600D3B1C1 /* LoginModel.swift */; };
-		CF7D5FC027BE044000D3B1C1 /* EmployeeStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF7D5FBF27BE044000D3B1C1 /* EmployeeStoryboard.storyboard */; };
+		CF7D5FC027BE044000D3B1C1 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF7D5FBF27BE044000D3B1C1 /* Home.storyboard */; };
 		CFA01CEF27BA583800258455 /* ChangePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA01CEE27BA583800258455 /* ChangePasswordView.swift */; };
 		CFAB215D27BA531A002B2E3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB215C27BA531A002B2E3C /* AppDelegate.swift */; };
 		CFAB215F27BA531A002B2E3C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB215E27BA531A002B2E3C /* SceneDelegate.swift */; };
@@ -56,7 +56,7 @@
 		CF24919327D9DD2A0038D704 /* AdminVacationHistoryPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminVacationHistoryPage.swift; sourceTree = "<group>"; };
 		CF24919427D9DD2A0038D704 /* AdminChangeEmployeePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminChangeEmployeePage.swift; sourceTree = "<group>"; };
 		CF7D5FAB27BCD98600D3B1C1 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
-		CF7D5FBF27BE044000D3B1C1 /* EmployeeStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EmployeeStoryboard.storyboard; sourceTree = "<group>"; };
+		CF7D5FBF27BE044000D3B1C1 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		CFA01CEE27BA583800258455 /* ChangePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordView.swift; sourceTree = "<group>"; };
 		CFAB215927BA531A002B2E3C /* K-Connect-IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "K-Connect-IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFAB215C27BA531A002B2E3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -118,12 +118,12 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
-		CFA01CE627BA579E00258455 /* User */ = {
+		CFA01CE627BA579E00258455 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				CF7D5FBF27BE044000D3B1C1 /* EmployeeStoryboard.storyboard */,
+				CF7D5FBF27BE044000D3B1C1 /* Home.storyboard */,
 			);
-			name = User;
+			name = Home;
 			sourceTree = "<group>";
 		};
 		CFA01CE727BA57A500258455 /* Admin */ = {
@@ -174,7 +174,7 @@
 				CF7D5FC727BE434000D3B1C1 /* Network */,
 				CFA01CE827BA57AC00258455 /* Common */,
 				CFA01CE727BA57A500258455 /* Admin */,
-				CFA01CE627BA579E00258455 /* User */,
+				CFA01CE627BA579E00258455 /* Home */,
 				7F01C23427F8432B003A6D8B /* Main */,
 				7F7F527A280067EF008F8908 /* Information */,
 				CFAB215C27BA531A002B2E3C /* AppDelegate.swift */,
@@ -272,7 +272,7 @@
 				7F7F527E280070DF008F8908 /* Information.storyboard in Resources */,
 				CFAB216427BA531A002B2E3C /* Main.storyboard in Resources */,
 				7F57A7702802969A005B5164 /* BackGround.jpeg in Resources */,
-				CF7D5FC027BE044000D3B1C1 /* EmployeeStoryboard.storyboard in Resources */,
+				CF7D5FC027BE044000D3B1C1 /* Home.storyboard in Resources */,
 				7F053F1827F8883C0075C6A4 /* AnimationSend.gif in Resources */,
 				7F572BF527F85C0700C1809D /* GoogleService-Info.plist in Resources */,
 			);

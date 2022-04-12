@@ -150,10 +150,10 @@
             </objects>
             <point key="canvasLocation" x="2852" y="84"/>
         </scene>
-        <!--EmployeeStoryboard-->
+        <!--Home-->
         <scene sceneID="E5h-W7-fHY">
             <objects>
-                <viewControllerPlaceholder storyboardName="EmployeeStoryboard" id="Awv-A4-z8y" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Home" id="Awv-A4-z8y" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="BiP-EO-uqG"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c9C-hu-jxZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -389,14 +389,12 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="o6M-07-ssr" kind="relationship" relationship="viewControllers" id="HDQ-9j-EKQ"/>
-                        <segue destination="Awv-A4-z8y" kind="relationship" relationship="viewControllers" id="Ou6-av-e8m"/>
-                        <segue destination="wgu-ZJ-VoC" kind="relationship" relationship="viewControllers" id="9m2-45-OPg"/>
+                        <segue destination="Awv-A4-z8y" kind="relationship" relationship="viewControllers" id="mpr-1l-ZXo"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WhG-H7-05a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2155" y="84"/>
+            <point key="canvasLocation" x="1959" y="84"/>
         </scene>
     </scenes>
     <resources>
