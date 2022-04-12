@@ -13,10 +13,8 @@
 		7F57A7702802969A005B5164 /* BackGround.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7F57A76F2802969A005B5164 /* BackGround.jpeg */; };
 		7F7F527C28006878008F8908 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7F527B28006878008F8908 /* MainController.swift */; };
 		7F7F527E280070DF008F8908 /* Information.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F7F527D280070DF008F8908 /* Information.storyboard */; };
-		7F7F528028010662008F8908 /* Main.logo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7F7F527F28010662008F8908 /* Main.logo.jpeg */; };
 		7F7F52822801149F008F8908 /* ImformationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7F52812801149F008F8908 /* ImformationController.swift */; };
 		CB2E1ECB2436B9BBCB0C5F51 /* Pods_K_Connect_IOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C415E9A7DB1711A5E9FF4804 /* Pods_K_Connect_IOS.framework */; };
-		CF24914427D9B9550038D704 /* LoadingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF24914327D9B9550038D704 /* LoadingService.swift */; };
 		CF24919527D9DD2A0038D704 /* AdminEmployeeDetailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF24918C27D9DD2A0038D704 /* AdminEmployeeDetailPage.swift */; };
 		CF24919627D9DD2A0038D704 /* AdminEmployeeManagePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF24918D27D9DD2A0038D704 /* AdminEmployeeManagePage.swift */; };
 		CF24919727D9DD2A0038D704 /* AdminDetailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF24918E27D9DD2A0038D704 /* AdminDetailPage.swift */; };
@@ -26,24 +24,8 @@
 		CF24919B27D9DD2A0038D704 /* AdminStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF24919227D9DD2A0038D704 /* AdminStoryboard.storyboard */; };
 		CF24919C27D9DD2A0038D704 /* AdminVacationHistoryPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF24919327D9DD2A0038D704 /* AdminVacationHistoryPage.swift */; };
 		CF24919D27D9DD2A0038D704 /* AdminChangeEmployeePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF24919427D9DD2A0038D704 /* AdminChangeEmployeePage.swift */; };
-		CF24919F27D9DD5E0038D704 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF24919E27D9DD5D0038D704 /* DetailController.swift */; };
 		CF7D5FAC27BCD98600D3B1C1 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7D5FAB27BCD98600D3B1C1 /* LoginModel.swift */; };
-		CF7D5FAE27BCD9D500D3B1C1 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7D5FAD27BCD9D500D3B1C1 /* UserModel.swift */; };
 		CF7D5FC027BE044000D3B1C1 /* EmployeeStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF7D5FBF27BE044000D3B1C1 /* EmployeeStoryboard.storyboard */; };
-		CF7D5FC227BE045900D3B1C1 /* EmployeeMainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7D5FC127BE045900D3B1C1 /* EmployeeMainPage.swift */; };
-		CF7D5FCB27BF38FC00D3B1C1 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7D5FCA27BF38FC00D3B1C1 /* ProfileModel.swift */; };
-		CF7D5FCF27BF679100D3B1C1 /* VacationHistoryListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7D5FCE27BF679100D3B1C1 /* VacationHistoryListModel.swift */; };
-		CF7D5FD327BF970000D3B1C1 /* EmployeeVacationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7D5FD227BF970000D3B1C1 /* EmployeeVacationInfo.swift */; };
-		CF91364C27C471F8006EE678 /* EmployeeVacationApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF91364B27C471F8006EE678 /* EmployeeVacationApplication.swift */; };
-		CF91364E27C4A5B3006EE678 /* ApprovalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF91364D27C4A5B3006EE678 /* ApprovalModel.swift */; };
-		CF91365027C4B433006EE678 /* EmployeeApprovalInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF91364F27C4B433006EE678 /* EmployeeApprovalInfo.swift */; };
-		CF91365227C8A45E006EE678 /* SuccessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF91365127C8A45E006EE678 /* SuccessModel.swift */; };
-		CF91365627C8A903006EE678 /* EmployeeVacationHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF91365527C8A903006EE678 /* EmployeeVacationHistory.swift */; };
-		CF91365827CC9DE7006EE678 /* TotalDaysModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF91365727CC9DE6006EE678 /* TotalDaysModel.swift */; };
-		CF91365A27CCAD04006EE678 /* EmployeeTeamVacationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF91365927CCAD04006EE678 /* EmployeeTeamVacationInfo.swift */; };
-		CF9972CF27CF353E0004F351 /* VacationListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9972CE27CF353E0004F351 /* VacationListModel.swift */; };
-		CF9972D127CF43D80004F351 /* VacationDateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9972D027CF43D80004F351 /* VacationDateModel.swift */; };
-		CF9972D327D59AE70004F351 /* EmployeeVacationInfoLeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9972D227D59AE60004F351 /* EmployeeVacationInfoLeader.swift */; };
 		CFA01CEF27BA583800258455 /* ChangePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA01CEE27BA583800258455 /* ChangePasswordView.swift */; };
 		CFAB215D27BA531A002B2E3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB215C27BA531A002B2E3C /* AppDelegate.swift */; };
 		CFAB215F27BA531A002B2E3C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB215E27BA531A002B2E3C /* SceneDelegate.swift */; };
@@ -61,11 +43,9 @@
 		7F57A76F2802969A005B5164 /* BackGround.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BackGround.jpeg; sourceTree = "<group>"; };
 		7F7F527B28006878008F8908 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		7F7F527D280070DF008F8908 /* Information.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Information.storyboard; sourceTree = "<group>"; };
-		7F7F527F28010662008F8908 /* Main.logo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Main.logo.jpeg; path = ../../../../Desktop/Main.logo.jpeg; sourceTree = "<group>"; };
 		7F7F52812801149F008F8908 /* ImformationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImformationController.swift; sourceTree = "<group>"; };
 		7F7F528428026E65008F8908 /* AnimationSend.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = AnimationSend.gif; sourceTree = "<group>"; };
 		C415E9A7DB1711A5E9FF4804 /* Pods_K_Connect_IOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_K_Connect_IOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CF24914327D9B9550038D704 /* LoadingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingService.swift; sourceTree = "<group>"; };
 		CF24918C27D9DD2A0038D704 /* AdminEmployeeDetailPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminEmployeeDetailPage.swift; sourceTree = "<group>"; };
 		CF24918D27D9DD2A0038D704 /* AdminEmployeeManagePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminEmployeeManagePage.swift; sourceTree = "<group>"; };
 		CF24918E27D9DD2A0038D704 /* AdminDetailPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminDetailPage.swift; sourceTree = "<group>"; };
@@ -75,24 +55,8 @@
 		CF24919227D9DD2A0038D704 /* AdminStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AdminStoryboard.storyboard; sourceTree = "<group>"; };
 		CF24919327D9DD2A0038D704 /* AdminVacationHistoryPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminVacationHistoryPage.swift; sourceTree = "<group>"; };
 		CF24919427D9DD2A0038D704 /* AdminChangeEmployeePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminChangeEmployeePage.swift; sourceTree = "<group>"; };
-		CF24919E27D9DD5D0038D704 /* DetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
 		CF7D5FAB27BCD98600D3B1C1 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
-		CF7D5FAD27BCD9D500D3B1C1 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		CF7D5FBF27BE044000D3B1C1 /* EmployeeStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EmployeeStoryboard.storyboard; sourceTree = "<group>"; };
-		CF7D5FC127BE045900D3B1C1 /* EmployeeMainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeMainPage.swift; sourceTree = "<group>"; };
-		CF7D5FCA27BF38FC00D3B1C1 /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
-		CF7D5FCE27BF679100D3B1C1 /* VacationHistoryListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacationHistoryListModel.swift; sourceTree = "<group>"; };
-		CF7D5FD227BF970000D3B1C1 /* EmployeeVacationInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeVacationInfo.swift; sourceTree = "<group>"; };
-		CF91364B27C471F8006EE678 /* EmployeeVacationApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeVacationApplication.swift; sourceTree = "<group>"; };
-		CF91364D27C4A5B3006EE678 /* ApprovalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApprovalModel.swift; sourceTree = "<group>"; };
-		CF91364F27C4B433006EE678 /* EmployeeApprovalInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeApprovalInfo.swift; sourceTree = "<group>"; };
-		CF91365127C8A45E006EE678 /* SuccessModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessModel.swift; sourceTree = "<group>"; };
-		CF91365527C8A903006EE678 /* EmployeeVacationHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeVacationHistory.swift; sourceTree = "<group>"; };
-		CF91365727CC9DE6006EE678 /* TotalDaysModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalDaysModel.swift; sourceTree = "<group>"; };
-		CF91365927CCAD04006EE678 /* EmployeeTeamVacationInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeTeamVacationInfo.swift; sourceTree = "<group>"; };
-		CF9972CE27CF353E0004F351 /* VacationListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacationListModel.swift; sourceTree = "<group>"; };
-		CF9972D027CF43D80004F351 /* VacationDateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacationDateModel.swift; sourceTree = "<group>"; };
-		CF9972D227D59AE60004F351 /* EmployeeVacationInfoLeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeVacationInfoLeader.swift; sourceTree = "<group>"; };
 		CFA01CEE27BA583800258455 /* ChangePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordView.swift; sourceTree = "<group>"; };
 		CFAB215927BA531A002B2E3C /* K-Connect-IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "K-Connect-IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFAB215C27BA531A002B2E3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -158,14 +122,6 @@
 			isa = PBXGroup;
 			children = (
 				CF7D5FBF27BE044000D3B1C1 /* EmployeeStoryboard.storyboard */,
-				CF7D5FC127BE045900D3B1C1 /* EmployeeMainPage.swift */,
-				CF7D5FD227BF970000D3B1C1 /* EmployeeVacationInfo.swift */,
-				CF91364B27C471F8006EE678 /* EmployeeVacationApplication.swift */,
-				CF91364F27C4B433006EE678 /* EmployeeApprovalInfo.swift */,
-				CF91365527C8A903006EE678 /* EmployeeVacationHistory.swift */,
-				CF91365927CCAD04006EE678 /* EmployeeTeamVacationInfo.swift */,
-				CF9972D227D59AE60004F351 /* EmployeeVacationInfoLeader.swift */,
-				CF24914327D9B9550038D704 /* LoadingService.swift */,
 			);
 			name = User;
 			sourceTree = "<group>";
@@ -189,16 +145,7 @@
 		CFA01CE827BA57AC00258455 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				CF24919E27D9DD5D0038D704 /* DetailController.swift */,
 				CF7D5FAB27BCD98600D3B1C1 /* LoginModel.swift */,
-				CF7D5FAD27BCD9D500D3B1C1 /* UserModel.swift */,
-				CF7D5FCA27BF38FC00D3B1C1 /* ProfileModel.swift */,
-				CF7D5FCE27BF679100D3B1C1 /* VacationHistoryListModel.swift */,
-				CF91364D27C4A5B3006EE678 /* ApprovalModel.swift */,
-				CF91365127C8A45E006EE678 /* SuccessModel.swift */,
-				CF91365727CC9DE6006EE678 /* TotalDaysModel.swift */,
-				CF9972CE27CF353E0004F351 /* VacationListModel.swift */,
-				CF9972D027CF43D80004F351 /* VacationDateModel.swift */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -233,7 +180,6 @@
 				CFAB215C27BA531A002B2E3C /* AppDelegate.swift */,
 				CFAB215E27BA531A002B2E3C /* SceneDelegate.swift */,
 				CFAB216527BA531B002B2E3C /* Assets.xcassets */,
-				7F7F527F28010662008F8908 /* Main.logo.jpeg */,
 				7F7F528328026E59008F8908 /* Image */,
 				7F053F1727F8883C0075C6A4 /* AnimationSend.gif */,
 				CFAB216727BA531B002B2E3C /* LaunchScreen.storyboard */,
@@ -328,7 +274,6 @@
 				7F57A7702802969A005B5164 /* BackGround.jpeg in Resources */,
 				CF7D5FC027BE044000D3B1C1 /* EmployeeStoryboard.storyboard in Resources */,
 				7F053F1827F8883C0075C6A4 /* AnimationSend.gif in Resources */,
-				7F7F528028010662008F8908 /* Main.logo.jpeg in Resources */,
 				7F572BF527F85C0700C1809D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -382,38 +327,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF7D5FCB27BF38FC00D3B1C1 /* ProfileModel.swift in Sources */,
 				CF24919727D9DD2A0038D704 /* AdminDetailPage.swift in Sources */,
 				CF24919827D9DD2A0038D704 /* AdminMainPage.swift in Sources */,
-				CF7D5FCF27BF679100D3B1C1 /* VacationHistoryListModel.swift in Sources */,
-				CF91365027C4B433006EE678 /* EmployeeApprovalInfo.swift in Sources */,
 				CF7D5FAC27BCD98600D3B1C1 /* LoginModel.swift in Sources */,
-				CF24914427D9B9550038D704 /* LoadingService.swift in Sources */,
-				CF91365227C8A45E006EE678 /* SuccessModel.swift in Sources */,
-				CF9972D127CF43D80004F351 /* VacationDateModel.swift in Sources */,
 				7F7F52822801149F008F8908 /* ImformationController.swift in Sources */,
 				CFAB216127BA531A002B2E3C /* ViewController.swift in Sources */,
 				CF24919A27D9DD2A0038D704 /* AdminNewEmployeePage.swift in Sources */,
-				CF7D5FC227BE045900D3B1C1 /* EmployeeMainPage.swift in Sources */,
 				7F01C23327F842C0003A6D8B /* JoinController.swift in Sources */,
 				CFAB215D27BA531A002B2E3C /* AppDelegate.swift in Sources */,
-				CF91364C27C471F8006EE678 /* EmployeeVacationApplication.swift in Sources */,
-				CF7D5FD327BF970000D3B1C1 /* EmployeeVacationInfo.swift in Sources */,
-				CF9972CF27CF353E0004F351 /* VacationListModel.swift in Sources */,
-				CF91364E27C4A5B3006EE678 /* ApprovalModel.swift in Sources */,
-				CF9972D327D59AE70004F351 /* EmployeeVacationInfoLeader.swift in Sources */,
 				CF24919927D9DD2A0038D704 /* AdminGroupManagePage.swift in Sources */,
 				CF24919527D9DD2A0038D704 /* AdminEmployeeDetailPage.swift in Sources */,
 				CFAB215F27BA531A002B2E3C /* SceneDelegate.swift in Sources */,
-				CF7D5FAE27BCD9D500D3B1C1 /* UserModel.swift in Sources */,
 				CF24919C27D9DD2A0038D704 /* AdminVacationHistoryPage.swift in Sources */,
 				7F7F527C28006878008F8908 /* MainController.swift in Sources */,
-				CF91365827CC9DE7006EE678 /* TotalDaysModel.swift in Sources */,
 				CF24919D27D9DD2A0038D704 /* AdminChangeEmployeePage.swift in Sources */,
 				CFA01CEF27BA583800258455 /* ChangePasswordView.swift in Sources */,
-				CF91365627C8A903006EE678 /* EmployeeVacationHistory.swift in Sources */,
-				CF91365A27CCAD04006EE678 /* EmployeeTeamVacationInfo.swift in Sources */,
-				CF24919F27D9DD5E0038D704 /* DetailController.swift in Sources */,
 				CF24919627D9DD2A0038D704 /* AdminEmployeeManagePage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

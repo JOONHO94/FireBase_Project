@@ -76,29 +76,10 @@ class ChangePasswordView : UIViewController{
         var newPwd = newPasswordInput.text!
         
         
-         let url = "https://kconnect.ksmartech.com:8443/init"
-         var request = URLRequest(url: URL(string: url)!)
-         request.httpMethod = "PUT"
-         request.headers = APIManager.getAPIHeader()
-         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-         request.timeoutInterval = 10
         
         
-        let params = ["password" : "\(pwd)","newPassword" : "\(newPwd)"] as Dictionary
-        do{
-            try request.httpBody = JSONSerialization.data(withJSONObject: params, options: [])
-            
-        }catch{
-            print("http Body Error")
-        }
         
-         AF.request(request).responseString{ (response) in
-             switch response.result{
-             case .success(let resData):
-                 print("resData: ",resData)
-             case .failure(let error):
-                 print("에러에러에러",error)
-             }
+        
          }
     }
-}
+
