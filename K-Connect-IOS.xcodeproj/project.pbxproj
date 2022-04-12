@@ -11,9 +11,11 @@
 		7F053F1827F8883C0075C6A4 /* AnimationSend.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7F053F1727F8883C0075C6A4 /* AnimationSend.gif */; };
 		7F572BF527F85C0700C1809D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7F572BF427F85C0700C1809D /* GoogleService-Info.plist */; };
 		7F57A7702802969A005B5164 /* BackGround.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7F57A76F2802969A005B5164 /* BackGround.jpeg */; };
-		7F7F527C28006878008F8908 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7F527B28006878008F8908 /* MainController.swift */; };
+		7F7F527C28006878008F8908 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7F527B28006878008F8908 /* HomeController.swift */; };
 		7F7F527E280070DF008F8908 /* Information.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F7F527D280070DF008F8908 /* Information.storyboard */; };
 		7F7F52822801149F008F8908 /* ImformationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7F52812801149F008F8908 /* ImformationController.swift */; };
+		7FAE4F132805BA4300761430 /* Messenger.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FAE4F122805BA4300761430 /* Messenger.storyboard */; };
+		7FAE4F162805BAA100761430 /* Timeline.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FAE4F152805BAA100761430 /* Timeline.storyboard */; };
 		CB2E1ECB2436B9BBCB0C5F51 /* Pods_K_Connect_IOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C415E9A7DB1711A5E9FF4804 /* Pods_K_Connect_IOS.framework */; };
 		CF24919527D9DD2A0038D704 /* AdminEmployeeDetailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF24918C27D9DD2A0038D704 /* AdminEmployeeDetailPage.swift */; };
 		CF24919627D9DD2A0038D704 /* AdminEmployeeManagePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF24918D27D9DD2A0038D704 /* AdminEmployeeManagePage.swift */; };
@@ -41,10 +43,12 @@
 		7F053F1727F8883C0075C6A4 /* AnimationSend.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = AnimationSend.gif; path = ../../../../Downloads/AnimationSend.gif; sourceTree = "<group>"; };
 		7F572BF427F85C0700C1809D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7F57A76F2802969A005B5164 /* BackGround.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BackGround.jpeg; sourceTree = "<group>"; };
-		7F7F527B28006878008F8908 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		7F7F527B28006878008F8908 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		7F7F527D280070DF008F8908 /* Information.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Information.storyboard; sourceTree = "<group>"; };
 		7F7F52812801149F008F8908 /* ImformationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImformationController.swift; sourceTree = "<group>"; };
 		7F7F528428026E65008F8908 /* AnimationSend.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = AnimationSend.gif; sourceTree = "<group>"; };
+		7FAE4F122805BA4300761430 /* Messenger.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Messenger.storyboard; sourceTree = "<group>"; };
+		7FAE4F152805BAA100761430 /* Timeline.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Timeline.storyboard; sourceTree = "<group>"; };
 		C415E9A7DB1711A5E9FF4804 /* Pods_K_Connect_IOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_K_Connect_IOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF24918C27D9DD2A0038D704 /* AdminEmployeeDetailPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminEmployeeDetailPage.swift; sourceTree = "<group>"; };
 		CF24918D27D9DD2A0038D704 /* AdminEmployeeManagePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminEmployeeManagePage.swift; sourceTree = "<group>"; };
@@ -88,7 +92,6 @@
 				CFAB216027BA531A002B2E3C /* ViewController.swift */,
 				CFA01CEE27BA583800258455 /* ChangePasswordView.swift */,
 				7F01C23227F842C0003A6D8B /* JoinController.swift */,
-				7F7F527B28006878008F8908 /* MainController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -111,6 +114,22 @@
 			path = Image;
 			sourceTree = "<group>";
 		};
+		7FAE4F112805BA0D00761430 /* Messenger */ = {
+			isa = PBXGroup;
+			children = (
+				7FAE4F122805BA4300761430 /* Messenger.storyboard */,
+			);
+			name = Messenger;
+			sourceTree = "<group>";
+		};
+		7FAE4F142805BA7C00761430 /* Timeline */ = {
+			isa = PBXGroup;
+			children = (
+				7FAE4F152805BAA100761430 /* Timeline.storyboard */,
+			);
+			path = Timeline;
+			sourceTree = "<group>";
+		};
 		CF7D5FC727BE434000D3B1C1 /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				CF7D5FBF27BE044000D3B1C1 /* Home.storyboard */,
+				7F7F527B28006878008F8908 /* HomeController.swift */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -174,15 +194,17 @@
 				CF7D5FC727BE434000D3B1C1 /* Network */,
 				CFA01CE827BA57AC00258455 /* Common */,
 				CFA01CE727BA57A500258455 /* Admin */,
-				CFA01CE627BA579E00258455 /* Home */,
 				7F01C23427F8432B003A6D8B /* Main */,
+				CFA01CE627BA579E00258455 /* Home */,
+				7FAE4F112805BA0D00761430 /* Messenger */,
+				7FAE4F142805BA7C00761430 /* Timeline */,
 				7F7F527A280067EF008F8908 /* Information */,
 				CFAB215C27BA531A002B2E3C /* AppDelegate.swift */,
 				CFAB215E27BA531A002B2E3C /* SceneDelegate.swift */,
-				CFAB216527BA531B002B2E3C /* Assets.xcassets */,
-				7F7F528328026E59008F8908 /* Image */,
-				7F053F1727F8883C0075C6A4 /* AnimationSend.gif */,
 				CFAB216727BA531B002B2E3C /* LaunchScreen.storyboard */,
+				CFAB216527BA531B002B2E3C /* Assets.xcassets */,
+				7F053F1727F8883C0075C6A4 /* AnimationSend.gif */,
+				7F7F528328026E59008F8908 /* Image */,
 				CFAB216A27BA531B002B2E3C /* Info.plist */,
 				7F572BF427F85C0700C1809D /* GoogleService-Info.plist */,
 			);
@@ -272,9 +294,11 @@
 				7F7F527E280070DF008F8908 /* Information.storyboard in Resources */,
 				CFAB216427BA531A002B2E3C /* Main.storyboard in Resources */,
 				7F57A7702802969A005B5164 /* BackGround.jpeg in Resources */,
+				7FAE4F132805BA4300761430 /* Messenger.storyboard in Resources */,
 				CF7D5FC027BE044000D3B1C1 /* Home.storyboard in Resources */,
 				7F053F1827F8883C0075C6A4 /* AnimationSend.gif in Resources */,
 				7F572BF527F85C0700C1809D /* GoogleService-Info.plist in Resources */,
+				7FAE4F162805BAA100761430 /* Timeline.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,7 +363,7 @@
 				CF24919527D9DD2A0038D704 /* AdminEmployeeDetailPage.swift in Sources */,
 				CFAB215F27BA531A002B2E3C /* SceneDelegate.swift in Sources */,
 				CF24919C27D9DD2A0038D704 /* AdminVacationHistoryPage.swift in Sources */,
-				7F7F527C28006878008F8908 /* MainController.swift in Sources */,
+				7F7F527C28006878008F8908 /* HomeController.swift in Sources */,
 				CF24919D27D9DD2A0038D704 /* AdminChangeEmployeePage.swift in Sources */,
 				CFA01CEF27BA583800258455 /* ChangePasswordView.swift in Sources */,
 				CF24919627D9DD2A0038D704 /* AdminEmployeeManagePage.swift in Sources */,

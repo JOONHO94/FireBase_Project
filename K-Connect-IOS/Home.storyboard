@@ -8,6 +8,33 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Home Controller-->
+        <scene sceneID="N5i-Bi-f3l">
+            <objects>
+                <viewController storyboardIdentifier="HomeController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Cfa-9p-ykB" customClass="HomeController" customModule="K_Connect_IOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bgv-rf-ACL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="xEu-VE-uhr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="RhW-Ar-EcX">
+                        <barButtonItem key="leftBarButtonItem" title="GoAdmin" style="plain" id="g2k-aq-Orw">
+                            <connections>
+                                <action selector="GoAdmin_Btn:" destination="Cfa-9p-ykB" id="Qi8-yh-FRG"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="bell" catalog="system" style="plain" id="LOR-34-tRY">
+                            <connections>
+                                <segue destination="jyU-iw-hZP" kind="show" id="JNT-Pp-6U2"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LM1-gq-avL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1784" y="-844"/>
+        </scene>
         <!--메인화면-->
         <scene sceneID="mcV-V8-w5K">
             <objects>
@@ -16,12 +43,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="rectangle.stack.person.crop" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="orE-rQ-7OE">
-                                <rect key="frame" x="20" y="84" width="37" height="46"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="bell" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="orE-rQ-7OE">
+                                <rect key="frame" x="20" y="40.5" width="37" height="45"/>
                                 <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4pe-2h-k7E">
-                                <rect key="frame" x="0.0" y="173" width="414" height="723"/>
+                                <rect key="frame" x="0.0" y="129" width="414" height="767"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G3m-f8-Nkx">
                                         <rect key="frame" x="0.0" y="8" width="414" height="1000"/>
@@ -117,7 +144,6 @@
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="vacationHistoryBtn:" destination="LCM-rH-ckb" eventType="touchUpInside" id="acn-k1-84N"/>
-                                                    <segue destination="eR4-a6-1TV" kind="show" id="cGF-zS-T0N"/>
                                                 </connections>
                                             </button>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="신청 날짜" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fAC-GW-tLo">
@@ -264,10 +290,6 @@
                                                         </connections>
                                                     </tableViewCell>
                                                 </prototypes>
-                                                <connections>
-                                                    <outlet property="dataSource" destination="LCM-rH-ckb" id="BZn-eD-wc3"/>
-                                                    <outlet property="delegate" destination="LCM-rH-ckb" id="akA-ZM-3UP"/>
-                                                </connections>
                                             </tableView>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58Y-c1-ejI">
                                                 <rect key="frame" x="228" y="196" width="79" height="41"/>
@@ -280,7 +302,6 @@
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="vacationApplicationBtn:" destination="LCM-rH-ckb" eventType="touchUpInside" id="OSm-QH-vW9"/>
-                                                    <segue destination="lfj-9s-loh" kind="show" id="Snj-ja-UcF"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LLZ-eF-trs">
@@ -294,7 +315,6 @@
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="teamVacationInfo:" destination="LCM-rH-ckb" eventType="touchUpInside" id="zTU-tc-PRo"/>
-                                                    <segue destination="5UG-HN-VSD" kind="show" id="Wt4-dR-4U2"/>
                                                 </connections>
                                             </button>
                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="353-eH-YgL">
@@ -369,7 +389,7 @@
                                 <viewLayoutGuide key="frameLayoutGuide" id="vvk-7F-ffG"/>
                             </scrollView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KP9-fS-bYp">
-                                <rect key="frame" x="102" y="84" width="210" height="55"/>
+                                <rect key="frame" x="102" y="40" width="210" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="mBa-HE-wuv"/>
                                     <constraint firstAttribute="width" constant="210" id="zJU-ez-z6Z"/>
@@ -405,7 +425,6 @@
                         <outlet property="approvalName" destination="jCi-5h-ukf" id="nsT-Fp-naG"/>
                         <outlet property="approvalNameLine" destination="Zyg-L9-afj" id="fNy-0n-ccC"/>
                         <outlet property="approvalTable" destination="353-eH-YgL" id="cSF-gc-qKp"/>
-                        <outlet property="imgView" destination="KP9-fS-bYp" id="OG1-6e-eoP"/>
                         <outlet property="infoBox" destination="cb5-qT-R0v" id="LIy-UE-FiU"/>
                         <outlet property="infoNameText" destination="43D-zi-8nG" id="HuZ-12-vO0"/>
                         <outlet property="infoPhoneText" destination="Tej-ZY-ivb" id="wnH-KW-em5"/>
@@ -414,15 +433,12 @@
                         <outlet property="infoVacationSlash" destination="cJj-0Q-ijC" id="87X-I0-qOG"/>
                         <outlet property="infoVacationTotalDay" destination="PrI-Ae-4cX" id="eVf-js-eQe"/>
                         <outlet property="infoVacationUsedDay" destination="ccr-kW-9MZ" id="bxn-hg-Nv8"/>
-                        <outlet property="managementBtn" destination="orE-rQ-7OE" id="daf-nA-LOv"/>
-                        <outlet property="myInfoName" destination="JnI-Db-Sf3" id="SpS-l1-zKE"/>
                         <outlet property="myInfoPhone" destination="pz1-ce-fgt" id="B3A-Fe-UPf"/>
                         <outlet property="myInfoTeam" destination="n33-eJ-lIK" id="8tZ-Z5-QGG"/>
                         <outlet property="myInfoTextView" destination="mq6-Ct-Bpi" id="7O1-0h-TlV"/>
                         <outlet property="myInfoVacation" destination="Wuo-X2-Zwf" id="Qfo-CC-5pU"/>
                         <outlet property="myInfoVacationTotal" destination="T5v-UQ-lV9" id="411-rh-UZa"/>
                         <outlet property="myVacationHistory" destination="jJV-Uk-bsm" id="mSb-gE-sFh"/>
-                        <outlet property="myVacationHistoryTable" destination="Ff6-RU-cwW" id="RRu-yG-6re"/>
                         <outlet property="nameScroll" destination="jCi-5h-ukf" id="Po6-Hz-Ku2"/>
                         <outlet property="scrollView" destination="4pe-2h-k7E" id="nL6-5s-SLz"/>
                         <outlet property="stateScroll" destination="Glp-tk-1ZH" id="BD5-ZE-KFr"/>
@@ -433,7 +449,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uG3-4d-lyC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="942" y="15"/>
+            <point key="canvasLocation" x="925" y="121"/>
         </scene>
         <!--Employee Vacation Application-->
         <scene sceneID="0HM-lH-4ox">
@@ -444,20 +460,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ddp-5O-II2">
-                                <rect key="frame" x="102" y="88" width="210" height="55"/>
+                                <rect key="frame" x="102" y="44" width="210" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="5gF-2n-kMW"/>
                                     <constraint firstAttribute="width" constant="210" id="Juv-nR-ncN"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="문의사항" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h3V-lm-dix">
-                                <rect key="frame" x="20" y="185" width="84" height="29"/>
+                                <rect key="frame" x="20" y="141" width="84" height="29"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nUk-Uu-VNr">
-                                <rect key="frame" x="0.0" y="222" width="414" height="674"/>
+                                <rect key="frame" x="0.0" y="178" width="414" height="718"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Jr-9Y-5Ig">
                                         <rect key="frame" x="8" y="8" width="398" height="950"/>
@@ -720,7 +736,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2vY-WF-d6I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="281" y="745"/>
+            <point key="canvasLocation" x="229" y="909"/>
         </scene>
         <!--Employee Team Vacation Info-->
         <scene sceneID="jGP-qF-P48">
@@ -731,19 +747,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="n5J-nN-xWT">
-                                <rect key="frame" x="102" y="79" width="210" height="3"/>
+                                <rect key="frame" x="102" y="79" width="210" height="52"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="210" id="TwN-Hh-syw"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="현황" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xeC-7B-qHu">
-                                <rect key="frame" x="20" y="90" width="88" height="29"/>
+                                <rect key="frame" x="20" y="139" width="88" height="29"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rgP-hC-9xM">
-                                <rect key="frame" x="20" y="127" width="374" height="769"/>
+                                <rect key="frame" x="20" y="176" width="374" height="720"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VCl-aA-Ohc">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="1000"/>
@@ -901,30 +917,30 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="auJ-TU-TSG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="925" y="745"/>
+            <point key="canvasLocation" x="958" y="963"/>
         </scene>
         <!--Employee Vacation History-->
         <scene sceneID="UyM-ZO-ioa">
             <objects>
                 <viewController storyboardIdentifier="EmployeeVacationHistory" useStoryboardIdentifierAsRestorationIdentifier="YES" id="eR4-a6-1TV" customClass="EmployeeVacationHistory" customModule="K_Connect_IOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="DIH-4z-bPh">
+                    <view key="view" contentMode="scaleToFill" id="DIH-4z-bPh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nvU-jS-2mw">
-                                <rect key="frame" x="102" y="72" width="210" height="35"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nvU-jS-2mw">
+                                <rect key="frame" x="102" y="28" width="210" height="79"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="210" id="Cfr-6A-iEe"/>
                                     <constraint firstAttribute="height" constant="35" id="pZc-aw-FBW"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="내역" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3TW-yt-0sL">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="내역" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3TW-yt-0sL">
                                 <rect key="frame" x="36" y="107" width="42" height="29"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gNS-p0-MKb">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gNS-p0-MKb">
                                 <rect key="frame" x="0.0" y="144" width="414" height="752"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Zr-pH-tSl">
@@ -1152,7 +1168,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EFx-Fp-S6q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1565" y="745"/>
+            <point key="canvasLocation" x="1632" y="867"/>
         </scene>
         <!--Employee Vacation Info-->
         <scene sceneID="ejc-1I-6vq">
@@ -1384,7 +1400,7 @@
             </objects>
             <point key="canvasLocation" x="2222" y="15"/>
         </scene>
-        <!--Employee Approval Info-->
+        <!--알림-->
         <scene sceneID="HEp-p2-p7m">
             <objects>
                 <viewController storyboardIdentifier="EmployeeApprovalInfo" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jyU-iw-hZP" customClass="EmployeeApprovalInfo" customModule="K_Connect_IOS" customModuleProvider="target" sceneMemberID="viewController">
@@ -1392,11 +1408,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xIw-v0-FGg">
-                                <rect key="frame" x="0.0" y="77" width="210" height="55"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="상세 내역" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WZ8-8Y-1tv">
-                                <rect key="frame" x="20" y="163" width="135" height="29"/>
+                                <rect key="frame" x="20" y="114" width="135" height="29"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1595,18 +1608,12 @@
                                 <color key="tintColor" systemColor="systemRedColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Button"/>
-                                <connections>
-                                    <action selector="denyBtn:" destination="jyU-iw-hZP" eventType="touchUpInside" id="S2r-by-aD9"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4X-sK-9p4">
                                 <rect key="frame" x="277" y="548" width="94" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Button"/>
-                                <connections>
-                                    <action selector="okBtn:" destination="jyU-iw-hZP" eventType="touchUpInside" id="Nad-8O-bwV"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="XlV-5M-zIP"/>
@@ -1614,27 +1621,14 @@
                         <constraints>
                             <constraint firstItem="WZ8-8Y-1tv" firstAttribute="leading" secondItem="XlV-5M-zIP" secondAttribute="leading" constant="20" id="BQN-hD-A02"/>
                             <constraint firstItem="XlV-5M-zIP" firstAttribute="trailing" secondItem="WZ8-8Y-1tv" secondAttribute="trailing" constant="259" id="DqG-Qm-50r"/>
-                            <constraint firstItem="XlV-5M-zIP" firstAttribute="trailing" secondItem="xIw-v0-FGg" secondAttribute="trailing" constant="204" id="Nj5-1A-NUE"/>
-                            <constraint firstItem="XlV-5M-zIP" firstAttribute="bottom" secondItem="xIw-v0-FGg" secondAttribute="bottom" constant="730" id="fmz-hK-gBZ"/>
-                            <constraint firstItem="xIw-v0-FGg" firstAttribute="top" secondItem="XlV-5M-zIP" secondAttribute="top" constant="33" id="ofM-qF-ps3"/>
-                            <constraint firstItem="xIw-v0-FGg" firstAttribute="leading" secondItem="XlV-5M-zIP" secondAttribute="leading" id="qtV-lo-V2U"/>
                             <constraint firstItem="XlV-5M-zIP" firstAttribute="bottom" secondItem="WZ8-8Y-1tv" secondAttribute="bottom" constant="670" id="uKh-bB-xXA"/>
-                            <constraint firstItem="WZ8-8Y-1tv" firstAttribute="top" secondItem="xIw-v0-FGg" secondAttribute="bottom" constant="31" id="yu8-NU-9bN"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="applicationDateText" destination="mRe-mN-Ogg" id="UYN-XN-F82"/>
-                        <outlet property="endDateText" destination="fTO-i2-gEH" id="omE-dT-YJl"/>
-                        <outlet property="imgView" destination="xIw-v0-FGg" id="6w4-OF-Aa5"/>
-                        <outlet property="nameText" destination="W1S-2U-Ddt" id="CA2-mm-Sck"/>
-                        <outlet property="reasonText" destination="Ysx-5U-TSa" id="JSp-0c-O9c"/>
-                        <outlet property="startDateText" destination="Xqo-tS-fvj" id="KtI-gG-4SB"/>
-                        <outlet property="typeText" destination="bKO-5y-9ov" id="QXR-mV-UQ6"/>
-                    </connections>
+                    <navigationItem key="navigationItem" title="알림" id="EAp-kY-uCS"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Os2-6u-tzQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2926" y="15"/>
+            <point key="canvasLocation" x="2545" y="-844"/>
         </scene>
         <!--Employee Vacation Info Leader-->
         <scene sceneID="gR7-WB-T59">
@@ -1747,13 +1741,10 @@
                             <constraint firstItem="Qtr-Ho-6fI" firstAttribute="bottom" secondItem="JxY-Vh-yLw" secondAttribute="bottom" constant="730" id="lfD-NW-WCg"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="imgView" destination="JxY-Vh-yLw" id="wnM-ow-TQ2"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Lw-9L-Y6p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3622" y="27"/>
+            <point key="canvasLocation" x="3277" y="-844"/>
         </scene>
         <!--Home-->
         <scene sceneID="B45-gi-s35">
@@ -1768,7 +1759,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="LCM-rH-ckb" kind="relationship" relationship="rootViewController" id="RHU-Xk-gtk"/>
+                        <segue destination="Cfa-9p-ykB" kind="relationship" relationship="rootViewController" id="Od1-XM-WLv"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IX7-Za-0p2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1778,11 +1769,11 @@
     </scenes>
     <resources>
         <image name="arrow.down.app" catalog="system" width="128" height="114"/>
+        <image name="bell" catalog="system" width="128" height="124"/>
         <image name="bell.fill" catalog="system" width="128" height="124"/>
         <image name="btn_tab_home_off" width="21" height="20"/>
         <image name="calendar" catalog="system" width="128" height="106"/>
         <image name="chevron.right.square" catalog="system" width="128" height="114"/>
-        <image name="rectangle.stack.person.crop" catalog="system" width="128" height="122"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

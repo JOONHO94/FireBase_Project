@@ -43,6 +43,12 @@ class ViewController: UIViewController {
         print("-----ViewController-----")
     }
     
+    @IBAction func GoChangeBtn(_ sender: Any) {
+        let vcName = self.storyboard?.instantiateViewController(withIdentifier: "MainTabBarController")
+                vcName?.modalPresentationStyle = .fullScreen //전체화면으로 보이게 설정
+                vcName?.modalTransitionStyle = .crossDissolve //전환 애니메이션 설정
+                self.present(vcName!, animated: true, completion: nil)
+    }
     
     @IBAction func LoginBtn(_ sender: Any) {
         guard let email = userIdInput.text, let password = userPwdInput.text

@@ -27,8 +27,19 @@ class AdminMainPage: UIViewController {
                 .pushViewController(Controller,animated: true)
         }
     }
-    @IBAction func Test(_ sender: Any) {
+    @IBAction func GoHomeBtn(_ sender: Any) {
         print("sssssssssssssssssssss")
+        let storyboard = UIStoryboard(name: "Home", bundle: nil)
+        
+        let settingBoard = storyboard.instantiateViewController(withIdentifier: "UserViewNavigation")
+        settingBoard.modalPresentationStyle = .fullScreen  // 이거 없으면 팝업.
+        let transition = CATransition()
+                transition.duration = 0.5
+                transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+                transition.type = CATransitionType.push
+                transition.subtype = CATransitionSubtype.fromRight
+                self.view.window!.layer.add(transition, forKey: nil)
+        self.present(settingBoard, animated: false, completion: nil)
     }
     
     @IBAction func Btn_GoAdminGroupManage(_ sender: Any) {

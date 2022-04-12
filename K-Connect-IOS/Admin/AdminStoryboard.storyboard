@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="a5u-mw-3j4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="a5u-mw-3j4">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--FireFood-->
+        <!--관리자-->
         <scene sceneID="DDB-kg-H40">
             <objects>
                 <viewController storyboardIdentifier="AdminMainPage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jrA-Bo-Nhu" customClass="AdminMainPage" customModule="K_Connect_IOS" customModuleProvider="target" sceneMemberID="viewController">
@@ -108,17 +108,10 @@
                             <constraint firstItem="1IV-vA-BJ6" firstAttribute="top" secondItem="i90-5k-T5H" secondAttribute="top" constant="-3" id="vMu-mR-CVi"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="FireFood" id="vyQ-ty-pYH">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="cTR-nh-syY">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="F83-r5-ovU">
-                                <rect key="frame" x="20" y="5" width="374" height="34.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="rectangle.portrait.and.arrow.right.fill" catalog="system" title=""/>
-                            </button>
+                    <navigationItem key="navigationItem" title="관리자" id="vyQ-ty-pYH">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="arrowshape.turn.up.backward.2.fill" catalog="system" style="plain" id="eXZ-RS-dvP">
                             <connections>
-                                <action selector="Test:" destination="jrA-Bo-Nhu" id="B6E-mY-rG6"/>
+                                <action selector="Test:" destination="jrA-Bo-Nhu" id="tl0-O7-h4h"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -359,7 +352,7 @@
         <!--Navigation Controller-->
         <scene sceneID="0Vp-bh-Tw8">
             <objects>
-                <navigationController storyboardIdentifier="AdminController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="a5u-mw-3j4" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="AdminNavigation" useStoryboardIdentifierAsRestorationIdentifier="YES" id="a5u-mw-3j4" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="GYZ-ov-SkX">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1215,7 +1208,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jwc-DJ-AzZ">
-                                <rect key="frame" x="0.0" y="160" width="414" height="682"/>
+                                <rect key="frame" x="0.0" y="116" width="414" height="692"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EH5-ob-5wA">
                                         <rect key="frame" x="8" y="8" width="398" height="1400"/>
@@ -1556,6 +1549,7 @@
     </scenes>
     <resources>
         <image name="arrow.down.to.line.circle" catalog="system" width="128" height="121"/>
+        <image name="arrowshape.turn.up.backward.2.fill" catalog="system" width="128" height="86"/>
         <image name="books.vertical.circle.fill" catalog="system" width="128" height="121"/>
         <image name="building.2.crop.circle.fill" catalog="system" width="128" height="121"/>
         <image name="calendar.badge.plus" catalog="system" width="128" height="108"/>
@@ -1564,7 +1558,6 @@
         <image name="magnifyingglass.circle" catalog="system" width="128" height="121"/>
         <image name="pencil.circle" catalog="system" width="128" height="121"/>
         <image name="person.2.circle" catalog="system" width="128" height="121"/>
-        <image name="rectangle.portrait.and.arrow.right.fill" catalog="system" width="128" height="108"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
