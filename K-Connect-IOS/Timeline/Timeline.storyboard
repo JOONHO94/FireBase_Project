@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--TimeLine-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
@@ -18,17 +18,17 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="qMZ-au-z9w"/>
+                    <navigationItem key="navigationItem" title="TimeLine" id="qMZ-au-z9w"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="934.78260869565224" y="71.651785714285708"/>
         </scene>
-        <!--Timeline-->
+        <!--Navigation Controller-->
         <scene sceneID="mNh-xg-5sa">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MI3-Vo-t0X" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Timeline" image="scribble.variable" catalog="system" id="oUW-i9-nwK"/>
+                    <tabBarItem key="tabBarItem" title="" image="heart.text.square" catalog="system" id="oUW-i9-nwK"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="UJG-HH-4mN">
@@ -46,7 +46,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="scribble.variable" catalog="system" width="128" height="118"/>
+        <image name="heart.text.square" catalog="system" width="128" height="114"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

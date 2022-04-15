@@ -27,7 +27,16 @@ class AdminMainPage: UIViewController {
                 .pushViewController(Controller,animated: true)
         }
     }
+    
     @IBAction func GoHomeBtn(_ sender: Any) {
+        print("sssssssssssssssssssss")
+    }
+    
+    
+    
+    
+    
+    @IBAction func GoHomeBt1n(_ sender: Any) {
         print("sssssssssssssssssssss")
         let storyboard = UIStoryboard(name: "Home", bundle: nil)
         

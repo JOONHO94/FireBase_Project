@@ -24,11 +24,11 @@
             </objects>
             <point key="canvasLocation" x="934.78260869565224" y="71.651785714285708"/>
         </scene>
-        <!--채팅-->
+        <!--Navigation Controller-->
         <scene sceneID="Aly-hc-wdY">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jsl-O4-3IZ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="채팅" image="btn_tab_chat" id="lMH-Dd-eDn"/>
+                    <tabBarItem key="tabBarItem" title="" image="btn_tab_chat" id="lMH-Dd-eDn"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="yar-gh-DYw">

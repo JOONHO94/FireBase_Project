@@ -23,28 +23,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="person.2.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="bHY-A6-rzb">
-                                <rect key="frame" x="152" y="614" width="110" height="107"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="books.vertical.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="iAE-ac-nQf">
-                                <rect key="frame" x="152" y="185" width="110" height="107"/>
-                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="FireBase" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1IV-vA-BJ6">
-                                <rect key="frame" x="92" y="85" width="230" height="45"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="tjx-qm-4en"/>
-                                </constraints>
-                                <viewLayoutGuide key="contentLayoutGuide" id="LJE-rJ-8CH"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="iMy-OM-vMe"/>
-                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JCx-NH-pmY">
                                 <rect key="frame" x="152" y="300" width="110" height="32"/>
                                 <color key="backgroundColor" red="0.11846570350000001" green="0.2246719499" blue="0.79137725520000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -55,13 +33,6 @@
                                     <action selector="Btn_GoDayoff:" destination="jrA-Bo-Nhu" eventType="touchUpInside" id="wyz-bn-fgA"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="building.2.crop.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="heN-T2-ZlQ">
-                                <rect key="frame" x="152" y="400" width="110" height="106"/>
-                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="110" id="FEC-Wz-avA"/>
-                                </constraints>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iC9-OB-9NR">
                                 <rect key="frame" x="152" y="514" width="110" height="31"/>
                                 <color key="backgroundColor" red="0.11846570350000001" green="0.2246719499" blue="0.79137725520000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -87,41 +58,23 @@
                         <viewLayoutGuide key="safeArea" id="i90-5k-T5H"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="1IV-vA-BJ6" firstAttribute="leading" secondItem="i90-5k-T5H" secondAttribute="leading" constant="92" id="3PP-3M-S5p"/>
-                            <constraint firstItem="heN-T2-ZlQ" firstAttribute="top" secondItem="JCx-NH-pmY" secondAttribute="bottom" constant="67.5" id="3x8-zK-rTP"/>
-                            <constraint firstItem="heN-T2-ZlQ" firstAttribute="leading" secondItem="i90-5k-T5H" secondAttribute="leading" constant="152" id="8kS-qK-JZk"/>
-                            <constraint firstItem="i90-5k-T5H" firstAttribute="trailing" secondItem="1IV-vA-BJ6" secondAttribute="trailing" constant="92" id="EpU-dd-aoP"/>
-                            <constraint firstItem="i90-5k-T5H" firstAttribute="trailing" secondItem="heN-T2-ZlQ" secondAttribute="trailing" constant="152" id="JGL-tT-FKe"/>
-                            <constraint firstItem="iAE-ac-nQf" firstAttribute="top" secondItem="i90-5k-T5H" secondAttribute="top" constant="96.5" id="PX2-Kp-XFC"/>
                             <constraint firstItem="JCx-NH-pmY" firstAttribute="top" secondItem="i90-5k-T5H" secondAttribute="top" constant="212" id="Pkn-2i-1Kd"/>
                             <constraint firstItem="i90-5k-T5H" firstAttribute="trailing" secondItem="JCx-NH-pmY" secondAttribute="trailing" constant="152" id="R5p-r4-OE1"/>
                             <constraint firstItem="i90-5k-T5H" firstAttribute="trailing" secondItem="iC9-OB-9NR" secondAttribute="trailing" constant="152" id="UVM-fn-ENg"/>
-                            <constraint firstItem="iC9-OB-9NR" firstAttribute="top" secondItem="heN-T2-ZlQ" secondAttribute="bottom" constant="7.5" id="cbg-2W-GML"/>
-                            <constraint firstItem="i90-5k-T5H" firstAttribute="bottom" secondItem="heN-T2-ZlQ" secondAttribute="bottom" constant="355.5" id="f54-1o-o70"/>
-                            <constraint firstItem="i90-5k-T5H" firstAttribute="trailing" secondItem="iAE-ac-nQf" secondAttribute="trailing" constant="152" id="lOO-ol-dmV"/>
                             <constraint firstItem="i90-5k-T5H" firstAttribute="bottom" secondItem="iC9-OB-9NR" secondAttribute="bottom" constant="317" id="nfT-Qh-UKs"/>
-                            <constraint firstItem="JCx-NH-pmY" firstAttribute="top" secondItem="iAE-ac-nQf" secondAttribute="bottom" constant="7.5" id="p2B-HP-LdZ"/>
-                            <constraint firstItem="iAE-ac-nQf" firstAttribute="leading" secondItem="i90-5k-T5H" secondAttribute="leading" constant="152" id="pMg-NA-SDr"/>
                             <constraint firstItem="i90-5k-T5H" firstAttribute="bottom" secondItem="JCx-NH-pmY" secondAttribute="bottom" constant="530" id="qYn-MJ-VMX"/>
                             <constraint firstItem="iC9-OB-9NR" firstAttribute="leading" secondItem="i90-5k-T5H" secondAttribute="leading" constant="152" id="qrx-Y8-AHX"/>
                             <constraint firstItem="JCx-NH-pmY" firstAttribute="leading" secondItem="i90-5k-T5H" secondAttribute="leading" constant="152" id="t7h-aj-o4m"/>
-                            <constraint firstItem="1IV-vA-BJ6" firstAttribute="top" secondItem="i90-5k-T5H" secondAttribute="top" constant="-3" id="vMu-mR-CVi"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="관리자" id="vyQ-ty-pYH">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="arrowshape.turn.up.backward.2.fill" catalog="system" style="plain" id="eXZ-RS-dvP">
-                            <connections>
-                                <action selector="Test:" destination="jrA-Bo-Nhu" id="tl0-O7-h4h"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="관리자" id="vyQ-ty-pYH"/>
                     <connections>
                         <outlet property="Lb_TotalMember" destination="wEZ-gF-n8W" id="wL5-3b-3df"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kZZ-RO-jCx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="954" y="-115"/>
+            <point key="canvasLocation" x="954" y="-199"/>
         </scene>
         <!--Admin Employee Manage Page-->
         <scene sceneID="wHb-Yu-hjg">
@@ -363,7 +316,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k5w-jc-SIK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="954" y="-788"/>
+            <point key="canvasLocation" x="954" y="-912"/>
         </scene>
         <!--Admin Group Manage Page-->
         <scene sceneID="QhO-Tk-igg">
@@ -1549,15 +1502,11 @@
     </scenes>
     <resources>
         <image name="arrow.down.to.line.circle" catalog="system" width="128" height="121"/>
-        <image name="arrowshape.turn.up.backward.2.fill" catalog="system" width="128" height="86"/>
-        <image name="books.vertical.circle.fill" catalog="system" width="128" height="121"/>
-        <image name="building.2.crop.circle.fill" catalog="system" width="128" height="121"/>
         <image name="calendar.badge.plus" catalog="system" width="128" height="108"/>
         <image name="chevron.forward" catalog="system" width="96" height="128"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="magnifyingglass.circle" catalog="system" width="128" height="121"/>
         <image name="pencil.circle" catalog="system" width="128" height="121"/>
-        <image name="person.2.circle" catalog="system" width="128" height="121"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

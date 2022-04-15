@@ -17,7 +17,7 @@ import Lottie
 //pod 'Firebase/Database' Realtime Database 관련 pod
 
 class ViewController: UIViewController {
-    let UIImage1 = UIImage(named: "BackGround.jpeg")
+    var patternImage : UIImage?
     
     var data : Array<Dictionary<String, Any>>?
     @IBOutlet var userIdInput: UITextField!
@@ -27,6 +27,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "BackGround.jpeg")!)
+        Btn_Login.layer.cornerRadius = 13   //버튼 곡선화
 //        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
 //            backgroundImage.image = UIImage(named: "BackGround.jpeg")
 //            //backgroundImage.contentMode = UIViewContentMode.scaleAspectfill

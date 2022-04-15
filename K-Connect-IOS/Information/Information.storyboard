@@ -16,8 +16,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1F-0X-W7e">
-                                <rect key="frame" x="112" y="112" width="42" height="21"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="rectangle.stack.person.crop" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="1KR-0b-5oH">
+                                <rect key="frame" x="10" y="97.5" width="100" height="100.5"/>
+                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="9JB-he-gfb"/>
+                                    <constraint firstAttribute="height" constant="100" id="lcj-dI-MQc"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="최준호 님" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1F-0X-W7e">
+                                <rect key="frame" x="219" y="133" width="64" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -26,10 +34,14 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1KR-0b-5oH" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="10" id="TnU-qL-tFF"/>
+                            <constraint firstItem="1KR-0b-5oH" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="eHf-US-ZkJ"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="2ud-1T-uYL"/>
                     <navigationItem key="navigationItem" title="마이페이지" id="seH-eB-f3N">
-                        <barButtonItem key="rightBarButtonItem" image="text.justifyright" catalog="system" style="plain" id="0BO-iw-HVA"/>
+                        <barButtonItem key="rightBarButtonItem" image="ico_list_selector_off" style="plain" id="0BO-iw-HVA"/>
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -56,11 +68,11 @@
             </objects>
             <point key="canvasLocation" x="1750.7246376811595" y="58.928571428571423"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="85I-hH-Nyg">
             <objects>
                 <navigationController storyboardIdentifier="InformationNavigation" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2zH-tA-8qM" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="btn_tab_setting_off" id="vv7-kq-l3v"/>
+                    <tabBarItem key="tabBarItem" title="" image="btn_tab_setting_off" id="vv7-kq-l3v"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" restorationIdentifier="Navigation" id="rfz-qn-ley">
@@ -79,7 +91,8 @@
     </scenes>
     <resources>
         <image name="btn_tab_setting_off" width="21" height="20"/>
-        <image name="text.justifyright" catalog="system" width="128" height="100"/>
+        <image name="ico_list_selector_off" width="32" height="32"/>
+        <image name="rectangle.stack.person.crop" catalog="system" width="128" height="122"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -14,6 +14,8 @@
 		7F7F527C28006878008F8908 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7F527B28006878008F8908 /* HomeController.swift */; };
 		7F7F527E280070DF008F8908 /* Information.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F7F527D280070DF008F8908 /* Information.storyboard */; };
 		7F7F52822801149F008F8908 /* ImformationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7F52812801149F008F8908 /* ImformationController.swift */; };
+		7F97E57F2809A8290002FA40 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F97E57E2809A8290002FA40 /* SearchController.swift */; };
+		7F97E5812809B1780002FA40 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F97E5802809B1780002FA40 /* NotificationController.swift */; };
 		7FAE4F132805BA4300761430 /* Messenger.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FAE4F122805BA4300761430 /* Messenger.storyboard */; };
 		7FAE4F162805BAA100761430 /* Timeline.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FAE4F152805BAA100761430 /* Timeline.storyboard */; };
 		CB2E1ECB2436B9BBCB0C5F51 /* Pods_K_Connect_IOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C415E9A7DB1711A5E9FF4804 /* Pods_K_Connect_IOS.framework */; };
@@ -47,6 +49,8 @@
 		7F7F527D280070DF008F8908 /* Information.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Information.storyboard; sourceTree = "<group>"; };
 		7F7F52812801149F008F8908 /* ImformationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImformationController.swift; sourceTree = "<group>"; };
 		7F7F528428026E65008F8908 /* AnimationSend.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = AnimationSend.gif; sourceTree = "<group>"; };
+		7F97E57E2809A8290002FA40 /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
+		7F97E5802809B1780002FA40 /* NotificationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		7FAE4F122805BA4300761430 /* Messenger.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Messenger.storyboard; sourceTree = "<group>"; };
 		7FAE4F152805BAA100761430 /* Timeline.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Timeline.storyboard; sourceTree = "<group>"; };
 		C415E9A7DB1711A5E9FF4804 /* Pods_K_Connect_IOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_K_Connect_IOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,7 +145,9 @@
 			isa = PBXGroup;
 			children = (
 				CF7D5FBF27BE044000D3B1C1 /* Home.storyboard */,
+				7F97E57E2809A8290002FA40 /* SearchController.swift */,
 				7F7F527B28006878008F8908 /* HomeController.swift */,
+				7F97E5802809B1780002FA40 /* NotificationController.swift */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -361,9 +367,11 @@
 				CFAB215D27BA531A002B2E3C /* AppDelegate.swift in Sources */,
 				CF24919927D9DD2A0038D704 /* AdminGroupManagePage.swift in Sources */,
 				CF24919527D9DD2A0038D704 /* AdminEmployeeDetailPage.swift in Sources */,
+				7F97E57F2809A8290002FA40 /* SearchController.swift in Sources */,
 				CFAB215F27BA531A002B2E3C /* SceneDelegate.swift in Sources */,
 				CF24919C27D9DD2A0038D704 /* AdminVacationHistoryPage.swift in Sources */,
 				7F7F527C28006878008F8908 /* HomeController.swift in Sources */,
+				7F97E5812809B1780002FA40 /* NotificationController.swift in Sources */,
 				CF24919D27D9DD2A0038D704 /* AdminChangeEmployeePage.swift in Sources */,
 				CFA01CEF27BA583800258455 /* ChangePasswordView.swift in Sources */,
 				CF24919627D9DD2A0038D704 /* AdminEmployeeManagePage.swift in Sources */,
