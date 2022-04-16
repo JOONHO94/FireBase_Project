@@ -2,13 +2,10 @@
 //  ViewController.swift
 //  Study7
 //
-//  Created by 최준호 on 2022/01/26.
+//  Created by 최준호 on 2022/03/26.
 //
 
 import UIKit
-import Alamofire
-import SwiftKeychainWrapper
-import JWTDecode
 import Firebase
 import FirebaseAuth
 import Lottie
@@ -19,7 +16,6 @@ import Lottie
 class ViewController: UIViewController {
     var patternImage : UIImage?
     
-    var data : Array<Dictionary<String, Any>>?
     @IBOutlet var userIdInput: UITextField!
     @IBOutlet var userPwdInput: UITextField!
 
@@ -27,53 +23,54 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("-----ViewController-----")
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "BackGround.jpeg")!)
         Btn_Login.layer.cornerRadius = 13   //버튼 곡선화
-//        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
-//            backgroundImage.image = UIImage(named: "BackGround.jpeg")
-//            //backgroundImage.contentMode = UIViewContentMode.scaleAspectfill
-//            self.view.insertSubview(backgroundImage, at: 0)
-    
         overrideUserInterfaceStyle = .light
         
         if let user = Auth.auth().currentUser {
             userPwdInput.placeholder = "이미 로그인 된 상태입니다."
             //fireBase에서 로그인 계속 유지하도록 설정
-            
         }
-
-        print("-----ViewController-----")
-    }
-    
-    @IBAction func GoChangeBtn(_ sender: Any) {
-        let vcName = self.storyboard?.instantiateViewController(withIdentifier: "MainTabBarController")
+        Auth.auth().addStateDidChangeListener{(auth, user) in
+            if(user != nil) {
+                let vcName = self.storyboard?.instantiateViewController(withIdentifier: "MainTabBarController")
                 vcName?.modalPresentationStyle = .fullScreen //전체화면으로 보이게 설정
                 vcName?.modalTransitionStyle = .crossDissolve //전환 애니메이션 설정
                 self.present(vcName!, animated: true, completion: nil)
+                
+            }
+            
+        }
+    }
+    
+    @IBAction func GoChangeBtn(_ sender: Any) {
+     
     }
     
     @IBAction func LoginBtn(_ sender: Any) {
+        print("Login 시도")
         guard let email = userIdInput.text, let password = userPwdInput.text
         else{return}
-        
-        Auth.auth().signIn(withEmail: email, password: password) {
-            (authResult, error) in
-            guard let user = authResult?.user else { return }
+        Auth.auth().signIn(withEmail: email, password: password) {( user, error) in
             
             if error == nil {
-                print("------login success----")
-                print("Test Login Btn : \(user)")
-            } else if error != nil {
-                print("---------------------------error")
-                print("login fail")
+                print("------login success-----")
+                print("-----UserInformation: \(user)-----")
             }
+            else if(error != nil) {
+                //error.debugDescription
+                let alert = UIAlertController(title: "알림", message: "아이디 혹은 비밀번호가 잘못 입력 되었습니다", preferredStyle: UIAlertController.Style.alert)
+                alert.addAction(UIAlertAction(title: "확인",style: UIAlertAction.Style.default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+            }
+           
+            
         }
         
     }
     
     @IBAction func Btn_GoJoin(_ sender: Any) {
-        Logout()
-        
         
         if let Controller = self.storyboard?.instantiateViewController(withIdentifier: "JoinController") {
             self.navigationController?
@@ -81,17 +78,15 @@ class ViewController: UIViewController {
         }
         
     }
-
-}
-
-class APIManager: NSObject{
-    internal static func getAPIHeader() -> HTTPHeaders {
-        var header = HTTPHeaders()
-        let token: String? = KeychainWrapper.standard.string(forKey: "token")
-        let authorization: String! = token
-        
-        header.add(name: "Authorization", value: "Bearer "+authorization!)
-
-        return header
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){   //touch시 키보드 내리는 함수
+          self.view.endEditing(true)
     }
+    @IBAction func GoMain_Test(_ sender: Any) {
+        let vcName = self.storyboard?.instantiateViewController(withIdentifier: "MainTabBarController")
+        vcName?.modalPresentationStyle = .fullScreen //전체화면으로 보이게 설정
+        vcName?.modalTransitionStyle = .crossDissolve //전환 애니메이션 설정
+        self.present(vcName!, animated: true, completion: nil)
+    }
+    
 }

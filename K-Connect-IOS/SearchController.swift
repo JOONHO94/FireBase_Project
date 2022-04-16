@@ -12,6 +12,9 @@ class SearchController: UIViewController {
     
     override func viewDidLoad() {
         overrideUserInterfaceStyle = .light
+        let searchBar = UISearchBar()
+        searchBar.placeholder = "검색"
+        self.navigationItem.titleView = searchBar
         
     }
     

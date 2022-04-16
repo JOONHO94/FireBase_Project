@@ -17,7 +17,7 @@ class ImformationController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("ImformationStoryboard----------")
+        print("-----ImformationStoryboard-----")
         if let user = Auth.auth().currentUser {
             Label_UserName.text = "이미 로그인 된 상태입니다."
 

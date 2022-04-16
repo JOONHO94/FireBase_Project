@@ -2,7 +2,7 @@
 //  ChangePasswordView.swift
 //  Kconnect
 //
-//  Created by 이준협 on 2022/01/27.
+//  Created by 최준호 on 2022/03/27.
 //
 
 import Foundation
