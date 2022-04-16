@@ -1,6 +1,15 @@
 # FireBase_Project
 
 ``` swift
-print("Test")
-printf("code Block \n");
+2022年　04月16日
+
+ログイン, ログアウト機能完了, ui修正
+
+久しぶりに使い, ios環境では初めなのでまだ足りないと思います。
+firebase ios 環境でだんだん慣れていると思います。
+続けて勉強して改善や発展します。
+できる限りiosの機能を使ってmessege機能までじっそうしたいと思います。
+
+
+
 ```
