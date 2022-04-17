@@ -18,6 +18,7 @@
 		7F97E5812809B1780002FA40 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F97E5802809B1780002FA40 /* NotificationController.swift */; };
 		7F97E585280AB6E10002FA40 /* ImformationSetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F97E584280AB6E10002FA40 /* ImformationSetController.swift */; };
 		7F97E587280BA0800002FA40 /* MessengerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F97E586280BA0800002FA40 /* MessengerController.swift */; };
+		7F97E589280BA1750002FA40 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F97E588280BA1750002FA40 /* Alamofire.swift */; };
 		7FAE4F132805BA4300761430 /* Messenger.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FAE4F122805BA4300761430 /* Messenger.storyboard */; };
 		7FAE4F162805BAA100761430 /* Timeline.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FAE4F152805BAA100761430 /* Timeline.storyboard */; };
 		CB2E1ECB2436B9BBCB0C5F51 /* Pods_K_Connect_IOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C415E9A7DB1711A5E9FF4804 /* Pods_K_Connect_IOS.framework */; };
@@ -55,6 +56,7 @@
 		7F97E5802809B1780002FA40 /* NotificationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		7F97E584280AB6E10002FA40 /* ImformationSetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImformationSetController.swift; sourceTree = "<group>"; };
 		7F97E586280BA0800002FA40 /* MessengerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerController.swift; sourceTree = "<group>"; };
+		7F97E588280BA1750002FA40 /* Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alamofire.swift; sourceTree = "<group>"; };
 		7FAE4F122805BA4300761430 /* Messenger.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Messenger.storyboard; sourceTree = "<group>"; };
 		7FAE4F152805BAA100761430 /* Timeline.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Timeline.storyboard; sourceTree = "<group>"; };
 		C415E9A7DB1711A5E9FF4804 /* Pods_K_Connect_IOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_K_Connect_IOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,6 +145,7 @@
 		CF7D5FC727BE434000D3B1C1 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				7F97E588280BA1750002FA40 /* Alamofire.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -369,6 +372,7 @@
 				7F7F52822801149F008F8908 /* ImformationController.swift in Sources */,
 				CFAB216127BA531A002B2E3C /* ViewController.swift in Sources */,
 				CF24919A27D9DD2A0038D704 /* AdminNewEmployeePage.swift in Sources */,
+				7F97E589280BA1750002FA40 /* Alamofire.swift in Sources */,
 				7F01C23327F842C0003A6D8B /* JoinController.swift in Sources */,
 				CFAB215D27BA531A002B2E3C /* AppDelegate.swift in Sources */,
 				CF24919927D9DD2A0038D704 /* AdminGroupManagePage.swift in Sources */,
