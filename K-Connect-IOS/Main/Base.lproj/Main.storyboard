@@ -34,7 +34,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F2r-d9-gMf">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F2r-d9-gMf" customClass="TransitionButton" customModule="TransitionButton">
                                 <rect key="frame" x="40" y="500.5" width="334" height="50"/>
                                 <color key="backgroundColor" red="1" green="0.4148715637" blue="0.60123041639999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>

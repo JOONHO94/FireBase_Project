@@ -13,7 +13,7 @@ pod 'SwiftKeychainWrapper'
 pod 'JWTDecode'
 pod 'DropDown'
 pod 'lottie-ios'
-pod 'SoftButton'
+pod 'TransitionButton'
 
 pod 'Firebase/Analytics'
 pod 'Firebase/Database'
