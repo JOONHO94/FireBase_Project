@@ -2,7 +2,7 @@
 //  EmployeeVacationInfoLeader.swift
 //  K-Connect-IOS
 //
-//  Created by 이준협 on 2022/03/07.
+//  Created by 최준호 on 2022/03/07.
 //
 
 import Foundation
