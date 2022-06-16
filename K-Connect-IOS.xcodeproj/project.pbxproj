@@ -8,8 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7F01C23327F842C0003A6D8B /* JoinController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F01C23227F842C0003A6D8B /* JoinController.swift */; };
-		7F053F1827F8883C0075C6A4 /* AnimationSend.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7F053F1727F8883C0075C6A4 /* AnimationSend.gif */; };
-		7F572BF527F85C0700C1809D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7F572BF427F85C0700C1809D /* GoogleService-Info.plist */; };
+		7F2956F7285B195B00A8EFE3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7F2956F6285B195B00A8EFE3 /* GoogleService-Info.plist */; };
 		7F57A7702802969A005B5164 /* BackGround.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7F57A76F2802969A005B5164 /* BackGround.jpeg */; };
 		7F7F527C28006878008F8908 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7F527B28006878008F8908 /* HomeController.swift */; };
 		7F7F527E280070DF008F8908 /* Information.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F7F527D280070DF008F8908 /* Information.storyboard */; };
@@ -45,8 +44,7 @@
 /* Begin PBXFileReference section */
 		327E64258088FF5B8DC2B6DA /* Pods-K-Connect-IOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-K-Connect-IOS.release.xcconfig"; path = "Target Support Files/Pods-K-Connect-IOS/Pods-K-Connect-IOS.release.xcconfig"; sourceTree = "<group>"; };
 		7F01C23227F842C0003A6D8B /* JoinController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinController.swift; sourceTree = "<group>"; };
-		7F053F1727F8883C0075C6A4 /* AnimationSend.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = AnimationSend.gif; path = ../../../../Downloads/AnimationSend.gif; sourceTree = "<group>"; };
-		7F572BF427F85C0700C1809D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7F2956F6285B195B00A8EFE3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7F57A76F2802969A005B5164 /* BackGround.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BackGround.jpeg; sourceTree = "<group>"; };
 		7F7F527B28006878008F8908 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		7F7F527D280070DF008F8908 /* Information.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Information.storyboard; sourceTree = "<group>"; };
@@ -218,10 +216,9 @@
 				CFAB215E27BA531A002B2E3C /* SceneDelegate.swift */,
 				CFAB216727BA531B002B2E3C /* LaunchScreen.storyboard */,
 				CFAB216527BA531B002B2E3C /* Assets.xcassets */,
-				7F053F1727F8883C0075C6A4 /* AnimationSend.gif */,
 				7F7F528328026E59008F8908 /* Image */,
 				CFAB216A27BA531B002B2E3C /* Info.plist */,
-				7F572BF427F85C0700C1809D /* GoogleService-Info.plist */,
+				7F2956F6285B195B00A8EFE3 /* GoogleService-Info.plist */,
 			);
 			path = "K-Connect-IOS";
 			sourceTree = "<group>";
@@ -310,9 +307,8 @@
 				CFAB216427BA531A002B2E3C /* Main.storyboard in Resources */,
 				7F57A7702802969A005B5164 /* BackGround.jpeg in Resources */,
 				7FAE4F132805BA4300761430 /* Messenger.storyboard in Resources */,
+				7F2956F7285B195B00A8EFE3 /* GoogleService-Info.plist in Resources */,
 				CF7D5FC027BE044000D3B1C1 /* Home.storyboard in Resources */,
-				7F053F1827F8883C0075C6A4 /* AnimationSend.gif in Resources */,
-				7F572BF527F85C0700C1809D /* GoogleService-Info.plist in Resources */,
 				7FAE4F162805BAA100761430 /* Timeline.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
